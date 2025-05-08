@@ -546,11 +546,12 @@ figure.image {
   margin-left: -75px;
   margin-top: -30px;
   height: 50px;
+  background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
   -webkit-animation: pulse 1s infinite linear;
           animation: pulse 1s infinite linear;
-  background-image: url(../images/favicon.png);
+  background-image: url(../images/favicon.jpg);
   content: "";
 }
 .preloader:before {
