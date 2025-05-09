@@ -1,9 +1,9 @@
-<?php include("layouts/secondary-header.php"); ?>
+<?php include("layouts/header.php"); ?>
 	<!-- Start main-content -->
 	<section class="page-title" style="background-image: url(images/background/page-title-bg.png);">
 		<div class="auto-container">
 			<div class="title-outer text-center">
-				<h1 class="title">About Hotel Ranbirs</h1>
+				<h1 class="title">Welcome to Hotel Ranbirs, Gomti Nagar, Lucknow</h1>
 				<ul class="page-breadcrumb">
 					<li><a href="index.html">Home</a></li>
 					<li>About Us</li>
@@ -21,15 +21,17 @@
         <div class="content-column col-lg-6 order-lg-2 wow fadeInRight" data-wow-delay="600ms">
           <div class="inner-column">
             <div class="sec-title">
-              <span class="sub-title style-two">Welcome to</span>
-              <h2>Hotel Ranbirs - Best Hotel in Gomti Nagar</h2>
-              <div class="text-2">A friendly welcome to best hotel in Gomti Nagar, Lucknow. We have Unbeatable prices for great hospitality.</div>
-              <div class="text">Whether our customers are on a business trip or leisure, here at Ranbirs you will feel guaranteed comfort and outstanding quality. We have strong believe in providing you with our Good Night Guarantee, and our hotel in the beautiful city of Nawabs, Lucknow is designed with only you in mind.</div>
+              <span class="sub-title style-two">Premium 3-Star Property</span>
+              <h2>Prime Location, Premium Hospitality</h2>
+              <div class="text-2">Hotel Ranbirs, located opposite MAX Hospital in Viraj Khand-4, Gomti Nagar, is designed to offer comfort, elegance, and personalized service.</div>
+              <div class="text">Whether you're here for business, leisure, or a grand celebration, we offer everything from spacious rooms and a multi-cuisine restaurant to a banquet hall, rooftop bar, and modern meeting room.</div>
             </div>
+            <h3 class="mt-4 mb-3">Why Choose Us?</h3>
             <ul class="list-style-two">
-              <li><i class="icon fa fa-circle-check"></i> 40 fully air-conditioned rooms with modern amenities</li>
-              <li><i class="icon fa fa-circle-check"></i> Unlimited free Wi-Fi access throughout the property</li>
-              <li><i class="icon fa fa-circle-check"></i> Multi-cuisine restaurant and Alfresco open-air dining</li>
+              <li><i class="icon fa fa-circle-check"></i> Prime location in central Lucknow</li>
+              <li><i class="icon fa fa-circle-check"></i> In-house restaurant and rooftop bar</li>
+              <li><i class="icon fa fa-circle-check"></i> Professional event management services</li>
+              <li><i class="icon fa fa-circle-check"></i> 24x7 hospitality service</li>
             </ul>
             <div class="btn-box">
               <a href="page-rooms.html" class="theme-btn btn-style-four"><span class="btn-title">View Our Rooms</span></a>
@@ -39,8 +41,8 @@
         <!-- Image Column -->
         <div class="image-column col-md-8 col-lg-6">
           <div class="inner-column wow fadeInLeft">
-            <figure class="image-1 overlay-anim wow reveal-left tm-gsap-img-parallax overflow-hidden"><img src="images/resource/about1-1.jpg" alt="Hotel Ranbirs Exterior"></figure>
-            <figure class="image-2 overlay-anim wow reveal-left tm-gsap-img-parallax overflow-hidden"><img src="images/resource/about1-2.jpg" alt="Hotel Ranbirs Lobby"></figure>
+            <figure class="image-1 overlay-anim wow reveal-left tm-gsap-img-parallax overflow-hidden"><img src="images/resource/about1-1.jpg" alt="Hotel Ranbirs Front Facade"></figure>
+            <figure class="image-2 overlay-anim wow reveal-left tm-gsap-img-parallax overflow-hidden"><img src="images/resource/about1-2.jpg" alt="Hotel Ranbirs Rooftop Bar"></figure>
           </div>
         </div>
       </div>
@@ -82,7 +84,7 @@
         <div class="image-column col-lg-6">
           <div class="inner-column">
             <div class="image-box">
-              <figure class="image overlay-anim wow reveal-right"><img src="images/resource/feature2-1.jpg" alt="Hotel Ranbirs Restaurant"></figure>
+              <figure class="image overlay-anim wow reveal-right"><img src="images/resource/feature2-1.jpg" alt="Hotel Ranbirs Multi-Cuisine Restaurant"></figure>
             </div>
           </div>
         </div>
@@ -91,8 +93,8 @@
             <div class="content-box">
               <div class="sec-title">
                 <span class="sub-title">EXPERIENCE</span>
-                <h2>Our Multi-Cuisine Restaurant</h2>
-                <div class="text">The most hospitable hotel of the Lucknow city with elegant interiors and modern comforts to provide a luxury retreat for guests with vibrant hospitality, world-class luxury, lip smacking cuisines and incredible services.</div>
+                <h2>Our Multi-Cuisine Restaurant & Rooftop Bar</h2>
+                <div class="text">Enjoy diverse culinary experiences at our in-house restaurant featuring local Lucknowi flavors and international cuisine. Our rooftop bar offers refreshing drinks with a panoramic view of Gomti Nagar.</div>
               </div>
               <a href="#" class="theme-btn btn-style-two read-more">VIEW MENU</a>
             </div>
@@ -106,7 +108,7 @@
               <div class="sec-title">
                 <span class="sub-title">HOST</span>
                 <h2>Banquet & Meeting Facilities</h2>
-                <div class="text">Hotel Ranbirs Lucknow is ideal for all travelers whether on business or leisure, and guests can make use of our meeting room, banquet facilities and friendly hospitality.</div>
+                <div class="text">Our professional event management team can handle everything from corporate meetings to grand weddings. The banquet hall accommodates up to 200 guests with customizable setups and catering options.</div>
               </div>
               <a href="#" class="theme-btn btn-style-two read-more">ENQUIRE NOW</a>
             </div>
@@ -124,7 +126,7 @@
        <div class="image-column col-lg-6">
           <div class="inner-column">
             <div class="image-box">
-              <figure class="image overlay-anim wow reveal-right"><img src="images/resource/feature2-3.jpg" alt="Hotel Ranbirs Gymnasium"></figure>
+              <figure class="image overlay-anim wow reveal-right"><img src="images/resource/feature2-3.jpg" alt="Hotel Ranbirs Location"></figure>
             </div>
           </div>
         </div>
@@ -132,11 +134,11 @@
           <div class="inner-column">
             <div class="content-box">
               <div class="sec-title">
-                <span class="sub-title">RELAX</span>
-                <h2>Fitness Center & Amenities</h2>
-                <div class="text">We feature a gymnasium, buffet breakfast, 24hrs WiFi and valet parking. All these objectives make us the Best hotel in Gomti Nagar and in Lucknow.</div>
+                <span class="sub-title">LOCATION</span>
+                <h2>Opposite MAX Hospital, Gomti Nagar</h2>
+                <div class="text">Our prime location in Viraj Khand-4 places you minutes away from major corporate offices, shopping centers, and healthcare facilities. Easy access to all parts of Lucknow makes us the preferred choice for both business and leisure travelers.</div>
               </div>
-              <a href="page-rooms.html" class="theme-btn btn-style-two read-more">VIEW AMENITIES</a>
+              <a href="contact.html" class="theme-btn btn-style-two read-more">GET DIRECTIONS</a>
             </div> 
           </div>
         </div> 

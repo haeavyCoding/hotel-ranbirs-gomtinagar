@@ -17,9 +17,41 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 </head>
-
 <body>
+<style>
+    /* Make sure nav items are inline and spaced properly */
+.main-header .main-menu .navigation {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap; /* prevent items from wrapping */
+  /* gap: 30px; spacing between menu items */
+}
 
+.main-header .main-menu .navigation li {
+  /* padding: 10px 15px; */
+  white-space: nowrap;
+}
+
+.main-header .auto-container {
+  max-width: 90%;
+  /* padding: 0 40px; increase horizontal padding */
+}
+
+/* Optional: Increase logo+nav wrapper width */
+.main-header .main-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Medium Screens (Tablet - Shrink spacing and font size) */
+@media (max-width: 1500px) {
+    .main-header .auto-container {
+  max-width: 100%;
+  /* padding: 0 40px; increase horizontal padding */
+}
+}
+</style>
 <div class="page-wrapper">
 
 	<!-- Preloader -->
@@ -49,7 +81,7 @@
       <!-- Main box -->
       <div class="main-box">
         <div class="logo-box">
-          <div class="logo"><a href="index.html"><img src="images/logo-2.png" alt="Hotel Ranbirs" title="Hotel Ranbirs"></a></div>
+          <div class="logo"><a href="index.html"><img src="images/logo (3).jpg" alt="Hotel Ranbirs" title="Hotel Ranbirs"></a></div>
         </div>
         <!--Nav Box-->
         <div class="nav-outer">
@@ -57,12 +89,12 @@
             <ul class="navigation">
               <li><a href="index.php">Home</a></li>
               <li class="current"><a href="page-about.php">About</a></li>
-              <li><a href="#">Restaurant</a></li>
-              <li><a href="#">Banquet</a></li>
+              <li><a href="restaurant.php">Restaurant</a></li>
+              <li><a href="banquet.php">Banquet</a></li>
               <li><a href="page-rooms.php">Rooms</a></li>
-              <li><a href="#">Meetings</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Packages</a></li>
+              <li><a href="meetings.php">Meetings</a></li>
+              <li><a href="careers.php">Careers</a></li>
+              <li><a href="packages.php">Packages</a></li>
               <li><a href="page-contact.php">Contact</a></li>
             </ul>
           </nav>

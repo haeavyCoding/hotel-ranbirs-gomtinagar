@@ -94,7 +94,7 @@
           <div class="inner-column">
             <div class="sec-title">
               <span class="sub-title style-three">HOTEL RANBIRS LUXURY HOTEL</span>
-              <h2>Your Journey Begins with Our Booking</h2>
+              <h2>Hotel Ranbirs Gomti Nagar, Lucknow</h2>
               <div class="text">One of the top hotels in Lucknow located in Gomti Nagar, just thirty minutes from the airport. Hotel Ranbirs offers 38 elegantly designed rooms, exceptional comfort, and world-class services in the heart of the City of Nawabs.</div>
             </div>
             <div class="btn-box">

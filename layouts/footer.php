@@ -1,5 +1,4 @@
-
-  <!-- Main Footer -->
+<!-- Main Footer -->
   <footer class="main-footer footer-style-one">
     <!-- Widgets Section -->
     <div class="widgets-section">
@@ -9,7 +8,7 @@
           <div class="footer-column col-lg-4 col-sm-6">
             <div class="footer-widget about-widget wow fadeInLeft">
               <div class="widget-content">
-                <div class="logo"><a href="#"> <img src="images/logo-2.png" alt="Hotel Ranbirs"></a></div>
+                <div class="logo"><a href="index.php"> <img src="images/logo-transparent-removebg-preview.png" alt="Hotel Ranbirs"></a></div>
                 <div class="text mb-0">One of the top hotels in Lucknow located in Gomti Nagar, offering luxury accommodations and world-class services in the heart of the City of Nawabs.</div>
               </div>
             </div>
@@ -77,7 +76,7 @@
                   <div class="inner">
                     <div class="list-info">Gomti Nagar, Lucknow, Uttar Pradesh, India</div>
                     <div class="list-info">+91 (522) 223-4567</div>
-                    <div class="list-info"><a href="mailto:info@hotelranbirs.com">info@hotelranbirs.com</a></div>
+                    <div class="list-info"><a href="mailto:info@hotelranbirs.com" class="list-info">info@hotelranbirs.com</a></div>
                   </div>
                 </div>
               </div>
@@ -110,8 +109,7 @@
   </footer>
   <!--End Main Footer -->
   
-  <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
-
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
 </div><!-- End Page Wrapper -->
 <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.js"></script> 
 <script src="js/popper.min.js"></script>

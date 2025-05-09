@@ -1,509 +1,268 @@
+<?php include("layouts/header.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
-
-
-<!-- Mirrored from html.kodesolution.com/2025/hoteler-html/page-rooms.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 08:36:23 GMT -->
 <head>
-	<meta charset="utf-8">
-	<title>Hoteler - Hotel Booking HTML Template Template</title>
-	<!-- Stylesheets -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-	<link rel="icon" href="images/favicon.png" type="image/x-icon">
-	<!-- Responsive -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta charset="UTF-8">
+  <title>Rooms at Hotel Ranbirs – Deluxe, Executive & Budget Stays</title>
+  <meta name="description" content="Stay in comfort at Hotel Ranbirs, Gomti Nagar. Book deluxe, executive, and budget rooms with modern amenities.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-
 <body>
-<div class="page-wrapper">
-  
-	<!-- Preloader -->
-	<div class="preloader"></div>
 
-  <!-- Main Header-->
-	<header class="main-header header-style-two">
-    <div class="auto-container">
-      <div class="header-top">
+<!-- Page Title -->
+<section class="page-title" style="background-image: url(images/background/page-title-bg.png);">
+  <div class="auto-container">
+    <div class="title-outer text-center" data-aos="fade-down">
+      <h1 class="title">Comfort & Elegance in Every Room</h1>
+      <ul class="page-breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li>Rooms</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Rooms Section -->
+<section class="rooms-section pb-100 pt-70">
+  <div class="auto-container">
+    <div class="sec-title text-center mb-5" data-aos="fade-up">
+      <h2>Room Categories at Hotel Ranbirs</h2>
+    </div>
+    <div class="row">
+      <!-- Room 1 -->
+      <div class="room-block col-lg-6 col-md-6 mb-4" data-aos="fade-up">
         <div class="inner-box">
-          <!-- top-left -->
-          <div class="top-left">
-            <span><i class="icon fa fa-location"></i>1247/Plot No. 39, 15th Phase, USA</span>
+          <div class="image-box">
+            <figure class="image-2 overlay-anim"><img src="images/resource/room-1.jpg" alt="Deluxe Room"></figure>
           </div>
-          <!-- Top-right -->
-          <div class="top-right">
-            <ul class="social-icon-one">
-              <li>Follow Us :</li>
-              <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fab fa-x-twitter"></i></a></li>
-              <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-              <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+          <div class="content-box">
+            <h6 class="title"><a href="room-details.html">Deluxe Room</a></h6>
+            <span class="price">₹7,000 / NIGHT</span>
+            <p>Elegantly styled and spacious, the Deluxe Room features modern furnishings, plush bedding, and all essential comforts for both business and leisure travelers.</p>
+          </div>
+          <div class="box-caption">
+            <a href="room-details.html" class="book-btn">Book Now</a>
+            <ul class="bx-links">
+              <li><a href="#"><i class="fa fa-wifi"></i></a></li>
+              <li><a href="#"><i class="fa fa-bed"></i></a></li>
+              <li><a href="#"><i class="fa fa-bath"></i></a></li>
+              <li><a href="#"><i class="fa fa-shower"></i></a></li>
             </ul>
           </div>
         </div>
       </div>
-      <!-- Main box -->
-      <div class="main-box">
-        <div class="logo-box">
-          <div class="logo"><a href="index.html"><img src="images/logo-2.png" alt="" title="Hoteler"></a></div>
-        </div>
-        <!--Nav Box-->
-        <div class="nav-outer">
-          <nav class="nav main-menu">
-            <ul class="navigation">
-              <li class="dropdown"><a href="#">Home</a>
-                <ul>
-                  <li><a href="index.html">Home page 01</a></li>
-                  <li><a href="index-2.html">Home page 02</a></li>
-                  <li><a href="index-3.html">Home page 03</a></li>
-                  <li><a href="index-4.html">Home page 04</a></li>
-                  <li><a href="index-5.html">Home page 05</a></li>
-                  <li><a href="index-6.html">Home page 06</a></li>
-                  <li class="dropdown"><a href="#">More Home</a>
-                    <ul>
-                      <li><a href="index-7.html">Home page 07</a></li>
-                      <li><a href="index-8.html">Home page 08</a></li>
-                      <li><a href="index-9.html">Home page 09</a></li>
-                      <li><a href="index-10.html">Home page 10</a></li>
-                      <li><a href="index-11.html">Home page 11</a></li>
-                      <li><a href="index-12.html">Home page 12</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a href="#">Dark Home</a>
-                    <ul>
-                      <li><a href="index-1-dark.html">Dark Home 01</a></li>
-                      <li><a href="index-2-dark.html">Dark Home 02</a></li>
-                      <li><a href="index-3-dark.html">Dark Home 03</a></li>
-                      <li><a href="index-4-dark.html">Dark Home 04</a></li>
-                      <li><a href="index-5-dark.html">Dark Home 05</a></li>
-                      <li><a href="index-6-dark.html">Dark Home 06</a></li>
-                      <li><a href="index-7-dark.html">Dark Home 07</a></li>
-                      <li><a href="index-8-dark.html">Dark Home 08</a></li>
-                      <li><a href="index-9-dark.html">Dark Home 09</a></li>
-                      <li><a href="index-10-dark.html">Dark Home 10</a></li>
-                      <li><a href="index-11-dark.html">Dark Home 11</a></li>
-                      <li><a href="index-12-dark.html">Dark Home 12</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a href="#">Single Home</a>
-                    <ul>
-                      <li><a href="index-1-single.html">Single Home 01</a></li>
-                      <li><a href="index-2-single.html">Single Home 02</a></li>
-                      <li><a href="index-3-single.html">Single Home 03</a></li>
-                      <li><a href="index-4-single.html">Single Home 04</a></li>
-                      <li><a href="index-5-single.html">Single Home 05</a></li>
-                      <li><a href="index-6-single.html">Single Home 06</a></li>
-                      <li><a href="index-7-single.html">Single Home 07</a></li>
-                      <li><a href="index-8-single.html">Single Home 08</a></li>
-                      <li><a href="index-9-single.html">Single Home 09</a></li>
-                      <li><a href="index-10-single.html">Single Home 10</a></li>
-                      <li><a href="index-11-single.html">Single Home 11</a></li>
-                      <li><a href="index-12-single.html">Single Home 12</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="index-1-rtl.html">RTL Home</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a href="#">Rooms & Suites</a>
-                <ul>
-                  <li><a href="page-rooms.html">Rooms</a></li>
-                  <li><a href="page-rooms-suite.html">Rooms and Suits</a></li>
-                  <li><a href="room-details.html">Room Details</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a href="#">Pages</a>
-                <ul>
-                  <li><a href="page-about.html">About</a></li>
-                  <li><a href="page-faq.html">Faq</a></li>
-                  <li><a href="page-pricing.html">Pricing</a></li>
-                  <li class="dropdown"><a href="#">Services</a>
-                    <ul>
-                      <li><a href="page-services.html">Services List</a></li>
-                      <li><a href="page-service-details.html">Services Details</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a href="#">Team</a>
-                    <ul>
-                      <li><a href="page-team.html">Team List</a></li>
-                      <li><a href="page-team-details.html">Team Details</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a href="#">Shop</a>
-                    <ul>
-                      <li><a href="shop-products.html">Products</a></li>
-                      <li><a href="shop-products-sidebar.html">Products with Sidebar</a></li>
-                      <li><a href="shop-product-details.html">Product Details</a></li>
-                      <li><a href="shop-cart.html">Cart</a></li>
-                      <li><a href="shop-checkout.html">Checkout</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="page-testimonial.html">Testimonials</a></li>
-                  <li><a href="page-404.html">404</a></li>
-                  <li><a href="elements.html">Elements</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a href="#">News</a>
-                <ul>
-                  <li><a href="news-grid.html">News Grid</a></li>
-                  <li><a href="news-details.html">News Details</a></li>
-                </ul>
-              </li>
-              <li><a href="page-contact.html">Contact</a></li>
+      <!-- Room 2 -->
+      <div class="room-block col-lg-6 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="inner-box">
+          <div class="image-box">
+            <figure class="image-2 overlay-anim"><img src="images/resource/room-2.jpg" alt="Executive Room"></figure>
+          </div>
+          <div class="content-box">
+            <h6 class="title"><a href="room-details.html">Executive Room</a></h6>
+            <span class="price">₹8,000 / NIGHT</span>
+            <p>Designed for luxury and convenience, the Executive Room features a workstation, complimentary high-speed internet, and enhanced in-room amenities.</p>
+          </div>
+          <div class="box-caption">
+            <a href="room-details.html" class="book-btn">Book Now</a>
+            <ul class="bx-links">
+              <li><a href="#"><i class="fa fa-wifi"></i></a></li>
+              <li><a href="#"><i class="fa fa-bed"></i></a></li>
+              <li><a href="#"><i class="fa fa-bath"></i></a></li>
+              <li><a href="#"><i class="fa fa-shower"></i></a></li>
             </ul>
-          </nav>
-          <!-- Main Menu End-->
-        </div>
-        <div class="outer-box">
-          <button class="search-btn">
-            <img src="images/icons/search.png" alt="" />
-          </button>
-          <div class="mobile-nav-toggler"><i class="icon fa fa-bars"></i></div>
-          <!-- Mobile Nav toggler -->
+          </div>
         </div>
       </div>
-      <!-- Mobile Menu  -->
-      <div class="mobile-menu">
-        <div class="menu-backdrop"></div>
-        <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
-        <nav class="menu-box">
-          <div class="upper-box">
-            <div class="nav-logo"><a href="index.html"><img src="images/logo-2.png" alt=""></a></div>
-            <div class="close-btn"><i class="icon fa fa-times"></i></div>
+      <!-- Room 3 -->
+      <div class="room-block col-lg-6 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="inner-box">
+          <div class="image-box">
+            <figure class="image-2 overlay-anim"><img src="images/resource/room-3.jpg" alt="Suite Room"></figure>
           </div>
-          <ul class="navigation clearfix">
-            <!--Keep This Empty / Menu will come through Javascript-->
-          </ul>
-          <ul class="contact-list-one">
-            <li>
-              <!-- Contact Info Box -->
-              <div class="contact-info-box">
-                <i class="icon lnr-icon-phone-handset"></i>
-                <span class="title">Call Now</span>
-                <a href="tel:+92880098670">+92 (8800) - 98670</a>
-              </div>
-            </li>
-            <li>
-              <!-- Contact Info Box -->
-              <div class="contact-info-box">
-                <span class="icon lnr-icon-envelope1"></span>
-                <span class="title">Send Email</span>
-                <a href="https://html.kodesolution.com/cdn-cgi/l/email-protection#eb838e879bab8884869b8a8592c5888486"><span class="__cf_email__" data-cfemail="4a222f263a0a2925273a2b243364292527">[email&#160;protected]</span></a>
-              </div>
-            </li>
-            <li>
-              <!-- Contact Info Box -->
-              <div class="contact-info-box">
-                <span class="icon lnr-icon-clock"></span>
-                <span class="title">Send Email</span>
-                Mon - Sat 8:00 - 6:30, Sunday - CLOSED
-              </div>
-            </li>
-          </ul>
-          <ul class="social-links">
-            <li><a href="#"><i class="fab fa-x-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          </ul>
-        </nav>
-      </div><!-- End Mobile Menu -->
-      <!-- Header Search -->
-      <div class="search-popup">
-        <span class="search-back-drop"></span>
-        <button class="close-search"><span class="fa fa-times"></span></button>
-        <div class="search-inner">
-          <form method="post" action="https://html.kodesolution.com/2025/hoteler-html/index.html">
-            <div class="form-group">
-              <input type="search" name="search-field" value="" placeholder="Search..." required="">
-              <button type="submit"><i class="fa fa-search"></i></button>
-            </div>
-          </form>
+          <div class="content-box">
+            <h6 class="title"><a href="room-details.html">The Suite</a></h6>
+            <span class="price">₹12,000 / NIGHT</span>
+            <p>The luxurious Suite offers a separate living area, king-size bed, premium bath essentials, and a beautiful city view to elevate your stay experience.</p>
+          </div>
+          <div class="box-caption">
+            <a href="room-details.html" class="book-btn">Book Now</a>
+            <ul class="bx-links">
+              <li><a href="#"><i class="fa fa-wifi"></i></a></li>
+              <li><a href="#"><i class="fa fa-bed"></i></a></li>
+              <li><a href="#"><i class="fa fa-bath"></i></a></li>
+              <li><a href="#"><i class="fa fa-shower"></i></a></li>
+            </ul>
+          </div>
         </div>
       </div>
-      <!-- End Header Search -->
-
-      <!-- Sticky Header  -->
-      <div class="sticky-header">
-        <div class="auto-container">
-          <div class="inner-container">
-            <!--Logo-->
-            <div class="logo">
-              <a href="index.html"><img src="images/logo-2.png" alt=""></a>
-            </div>
-            <!--Right Col-->
-            <div class="nav-outer">
-              <!-- Main Menu -->
-              <nav class="main-menu">
-                <div class="navbar-collapse show collapse clearfix">
-                  <ul class="navigation clearfix">
-                    <!--Keep This Empty / Menu will come through Javascript-->
-                  </ul>
-                </div>
-              </nav><!-- Main Menu End-->
-              <!--Mobile Navigation Toggler-->
-              <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
-            </div>
+      <!-- Room 4 -->
+      <div class="room-block col-lg-6 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="inner-box">
+          <div class="image-box">
+            <figure class="image-2 overlay-anim"><img src="images/resource/room-4.jpg" alt="Budget Room"></figure>
           </div>
-        </div>
-      </div><!-- End Sticky Menu -->
-    </div>
-	</header>
-	<!--End Main Header -->
-
-	<!-- Start main-content -->
-	<section class="page-title" style="background-image: url(images/background/page-title-bg.png);">
-		<div class="auto-container">
-			<div class="title-outer text-center">
-				<h1 class="title">Rooms</h1>
-				<ul class="page-breadcrumb">
-					<li><a href="index.html">Home</a></li>
-					<li>Rooms</li>
-				</ul>
-			</div>
-		</div>
-	</section>
-	<!-- end main-content -->
-
-  <!-- rooms-section -->
-  <section class="rooms-section pb-100">
-    <div class="auto-container">
-      <div class="row">
-        <!-- room-block -->
-        <div class="room-block col-lg-6 col-md-6">
-          <div class="inner-box wow fadeIn">
-            <div class="image-box">
-              <figure class="image-2 overlay-anim"><img src="images/resource/room-1.jpg" alt=""></figure>
-            </div>
-            <div class="content-box">
-              <h6 class="title"><a href="room-details.html">Junior Suite</a></h6>
-              <span class="price">150$ / NIGHT</span>
-            </div>
-            <div class="box-caption">
-              <a href="room-details.html" class="book-btn">book now</a>
-              <ul class="bx-links">
-                <li><a href="room-details.html"><i class="fa fa-wifi"></i></a></li>
-                <li><a href="room-details.html"><i class="fa fa-bed"></i></a></li>
-                <li><a href="room-details.html"><i class="fa fa-bath"></i></a></li>
-                <li><a href="room-details.html"><i class="fa fa-shower"></i></a></li>
-              </ul>
-            </div>
+          <div class="content-box">
+            <h6 class="title"><a href="room-details.html">Budget Room</a></h6>
+            <span class="price">₹5,000 / NIGHT</span>
+            <p>Affordable yet comfortable, the Budget Room is ideal for short stays. Enjoy a restful bed, clean en-suite, and modern essentials without compromise.</p>
           </div>
-        </div>
-        <!-- room-block -->
-        <div class="room-block col-lg-6 col-md-6">
-          <div class="inner-box wow fadeIn" data-wow-delay="200ms">
-            <div class="image-box">
-              <figure class="image-2 overlay-anim"><img src="images/resource/room-2.jpg" alt=""></figure>
-            </div>
-            <div class="content-box">
-              <h6 class="title"><a href="room-details.html">Family Room</a></h6>
-              <span class="price">200$ / NIGHT</span>
-            </div>
-            <div class="box-caption">
-              <a href="room-details.html" class="book-btn">book now</a>
-              <ul class="bx-links">
-                <li><a href="room-details.html"><i class="fa fa-wifi"></i></a></li>
-                <li><a href="room-details.html"><i class="fa fa-bed"></i></a></li>
-                <li><a href="room-details.html"><i class="fa fa-bath"></i></a></li>
-                <li><a href="room-details.html"><i class="fa fa-shower"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- room-block -->
-        <div class="room-block col-lg-3 col-md-6">
-          <div class="inner-box wow fadeIn" data-wow-delay="300ms">
-            <div class="image-box">
-              <figure class="image-2 overlay-anim"><img src="images/resource/room-3.jpg" alt=""></figure>
-            </div>
-            <div class="content-box">
-              <h6 class="title"><a href="room-details.html">Double Room</a></h6>
-              <span class="price">250$ / NIGHT</span>
-            </div>
-            <div class="box-caption">
-              <a href="room-details.html" class="book-btn">book now</a>
-              <ul class="bx-links">
-                <li><a href="room-details.html"><i class="fa fa-wifi"></i></a></li>
-                <li><a href="room-details.html"><i class="fa fa-bed"></i></a></li>
-                <li><a href="room-details.html"><i class="fa fa-bath"></i></a></li>
-                <li><a href="room-details.html"><i class="fa fa-shower"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- room-block -->
-        <div class="room-block col-lg-6 col-md-6">
-          <div class="inner-box large-style wow fadeIn" data-wow-delay="400ms">
-            <div class="image-box">
-              <figure class="image-2 overlay-anim"><img src="images/resource/room-4.jpg" alt=""></figure>
-            </div>
-            <div class="content-box">
-              <h6 class="title"><a href="room-details.html">Double Room</a></h6>
-              <span class="price">250$ / NIGHT</span>
-            </div>
-            <div class="box-caption">
-              <a href="room-details.html" class="book-btn">book now</a>
-              <ul class="bx-links">
-                <li><a href="room-details.html"><i class="fa fa-wifi"></i></a></li>
-                <li><a href="room-details.html"><i class="fa fa-bed"></i></a></li>
-                <li><a href="room-details.html"><i class="fa fa-bath"></i></a></li>
-                <li><a href="room-details.html"><i class="fa fa-shower"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- room-block -->
-        <div class="room-block col-lg-3 col-md-6">
-          <div class="inner-box wow fadeIn" data-wow-delay="500ms">
-            <div class="image-box">
-              <figure class="image-2 overlay-anim"><img src="images/resource/room-5.jpg" alt=""></figure>
-            </div>
-            <div class="content-box">
-              <h6 class="title"><a href="room-details.html">Deluxe Room</a></h6>
-              <span class="price">300$ / NIGHT</span>
-            </div>
-            <div class="box-caption">
-              <a href="room-details.html" class="book-btn">book now</a>
-              <ul class="bx-links">
-                <li><a href="room-details.html"><i class="fa fa-wifi"></i></a></li>
-                <li><a href="room-details.html"><i class="fa fa-bed"></i></a></li>
-                <li><a href="room-details.html"><i class="fa fa-bath"></i></a></li>
-                <li><a href="room-details.html"><i class="fa fa-shower"></i></a></li>
-              </ul>
-            </div>
+          <div class="box-caption">
+            <a href="room-details.html" class="book-btn">Book Now</a>
+            <ul class="bx-links">
+              <li><a href="#"><i class="fa fa-wifi"></i></a></li>
+              <li><a href="#"><i class="fa fa-bed"></i></a></li>
+              <li><a href="#"><i class="fa fa-bath"></i></a></li>
+              <li><a href="#"><i class="fa fa-shower"></i></a></li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <!-- End rooms-section -->
+  </div>
+</section>
 
-  <!-- Main Footer -->
-  <footer class="main-footer footer-style-one">
-    <!-- Widgets Section -->
-    <div class="widgets-section">
-      <div class="auto-container">
-        <div class="row">
-          <!-- Footer Column -->
-          <div class="footer-column col-lg-4 col-sm-6">
-            <div class="footer-widget about-widget wow fadeInLeft">
-              <div class="widget-content">
-                <div class="logo"><a href="#"> <img src="images/logo-2.png" alt=""></a></div>
-                <div class="text mb-0">Feel free to reach out if you want collaborate with us, or simply chat.</div>
-              </div>
-            </div>
-            <div class="footer-widget news-widget wow fadeInLeft" data-wow-delay="400ms">
-              <div class="subscribe-form-three">
-                <form method="post" action="#">
-                  <div class="form-group">
-                    <input type="email" name="email" class="email" value="" placeholder="Email Address" required="">
-                    <button type="button" class="theme-btn btn-style-one"><span class="btn-title"><i class="fa fa-paper-plane"></i></span></button>
-                  </div>
-                </form>
-              </div>
-            </div>
-            <div class="footer-widget widget-social wow fadeInLeft" data-wow-delay="300ms">
-              <h4 class="widget-title">Follow Us</h4>
-              <div class="widget-content">
-                <ul class="social-icon">
-                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                  <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                  <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                  <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- Footer Column -->
-          <div class="footer-column col-lg-3 col-sm-6 mb-0 ps-xl-5">
-            <div class="footer-widget links-widget ps-xl-5 wow fadeInLeft" data-wow-delay="200ms">
-              <h4 class="widget-title">Services</h4>
-              <div class="widget-content">
-                <ul class="user-links">
-                  <li><a href="#/">Store Directory</a></li>
-                  <li><a href="#/">Top Hotels</a></li>
-                  <li><a href="#/">Quick Links</a></li>
-                  <li><a href="#/">Important Links</a></li>
-                  <li><a href="#/">Insights</a></li>
-                  <li><a href="#/">Knowledge Center</a></li>
-                </ul>
-              </div>
-            </div>                       
-          </div>
-          <!-- Footer Column -->
-          <div class="footer-column col-lg-2 col-sm-6 mb-0 ps-xl-4">
-            <div class="footer-widget links-widget ps-xl-4 wow fadeInLeft" data-wow-delay="200ms">
-              <h4 class="widget-title">Company</h4>
-              <div class="widget-content">
-                <ul class="user-links">
-                  <li><a href="#/">Home</a></li>
-                  <li><a href="#/">About Us</a></li>
-                  <li><a href="#/">Services</a></li>
-                  <li><a href="#/">Career</a></li>
-                  <li><a href="#/">Contact</a></li>
-                </ul>
-              </div>
-            </div>                       
-          </div>
-          <!-- footer column -->
-          <div class="footer-column col-lg-3 col-sm-6">
-            <div class="footer-widget info-widget ps-xl-5 ms-xl-5 mb-30 wow fadeInLeft" data-wow-delay="300ms">
-              <h4 class="widget-title">New York</h4>
-              <div class="widget-content">
-                <!-- Contact List -->
-                <div class="contact-list">
-                  <div class="inner">
-                    <div class="list-info">2464 Royal Ln. Mesa, New Jersey 45463</div>
-                    <div class="list-info">(000) 222-0000</div>
-                    <div class="list-info"><a href="https://html.kodesolution.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="751c1b131a350c1a0007021017061c01105b161a18">[email&#160;protected]</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="footer-widget info-widget ps-xl-5 ms-xl-5 wow fadeInLeft" data-wow-delay="300ms">
-              <h4 class="widget-title">London</h4>
-              <div class="widget-content">
-                <!-- Contact List -->
-                <div class="contact-list">
-                  <div class="inner">
-                    <div class="list-info">1901 Thorn ridge Cir. Shiloh, Hawaii 81063</div>
-                    <div class="list-info">(000) 000-0000</div>
-                    <div class="list-info"><a href="https://html.kodesolution.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e28b8c848da29b8d9790958780918b9687cc818d8f">[email&#160;protected]</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+<!-- Styles (Add to your <head> or main CSS) -->
+<style>
+
+  .sec-title h2 {
+    color: #b34700; /* warning-orange */
+    font-weight: 700;
+  }
+  .amenities-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  .amenities-list li {
+    padding: 10px 0;
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    align-items: center;
+  }
+  .amenities-list li i {
+    color: #ff8800;
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  .facility-block .inner-box {
+    background: #fff3e6;
+    border-radius: 12px;
+    padding: 25px 15px;
+    transition: 0.3s ease;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+  .facility-block .inner-box:hover {
+    background-color: #ffe0cc;
+    transform: translateY(-5px);
+  }
+  .facility-block h4 {
+    margin-top: 10px;
+    color: #b34700;
+  }
+  .facility-block i {
+    color: #ff6600;
+  }
+  .description-section p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #444;
+    text-align: center;
+  }
+</style>
+
+<!-- Amenities Section -->
+<section class="amenities-section pb-70 pt-70" style="background-color: #fff9f4;">
+  <div class="auto-container">
+    <div class="sec-title text-center mb-4" data-aos="fade-down">
+      <h2>In-Room Amenities</h2>
+    </div>
+    <div class="row" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-md-4 mb-4">
+        <ul class="amenities-list">
+          <li><i class="fa fa-newspaper-o"></i> Free newspaper</li>
+          <li><i class="fa fa-snowflake-o"></i> Air conditioning</li>
+          <li><i class="fa fa-phone"></i> Phone</li>
+          <li><i class="fa fa-coffee"></i> Coffee/tea maker</li>
+          <li><i class="fa fa-glass"></i> Minibar</li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-4">
+        <ul class="amenities-list">
+          <li><i class="fa fa-cut"></i> Hair dryer</li>
+          <li><i class="fa fa-shower"></i> Shower only</li>
+          <li><i class="fa fa-bed"></i> Sofa bed</li>
+          <li><i class="fa fa-refresh"></i> Daily housekeeping</li>
+          <li><i class="fa fa-user"></i> Private bathroom</li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-4">
+        <ul class="amenities-list">
+          <li><i class="fa fa-leaf"></i> Free toiletries</li>
+          <li><i class="fa fa-wifi"></i> Free WiFi</li>
+          <li><i class="fa fa-television"></i> Flat-panel TV</li>
+          <li><i class="fa fa-archive"></i> Iron/ironing board</li>
+          <li><i class="fa fa-lock"></i> In-room safe</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Facilities Section -->
+<section class="facilities-section pb-70 pt-70" style="background-color: #fff4e6;">
+  <div class="auto-container">
+    <div class="sec-title text-center mb-4" data-aos="fade-down">
+      <h2>In-Hotel Facilities</h2>
+    </div>
+    <div class="row">
+      <div class="facility-block col-lg-3 col-md-6 mb-4" data-aos="zoom-in">
+        <div class="inner-box text-center">
+          <div class="icon-box"><i class="fa fa-wifi fa-2x mb-2"></i></div>
+          <h4>Wi-Fi Connectivity</h4>
+        </div>
+      </div>
+      <div class="facility-block col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="inner-box text-center">
+          <div class="icon-box"><i class="fa fa-cutlery fa-2x mb-2"></i></div>
+          <h4>Restaurant</h4>
+        </div>
+      </div>
+      <div class="facility-block col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="inner-box text-center">
+          <div class="icon-box"><i class="fa fa-heartbeat fa-2x mb-2"></i></div>
+          <h4>Gymnasium</h4>
+        </div>
+      </div>
+      <div class="facility-block col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
+        <div class="inner-box text-center">
+          <div class="icon-box"><i class="fa fa-glass fa-2x mb-2"></i></div>
+          <h4>Open Bar</h4>
         </div>
       </div>
     </div>
-    <!--  Footer Bottom -->
-    <div class="footer-bottom">
-      <div class="auto-container">
-        <div class="inner-container">
-          <div class="copyright-text">© 2025 <span>ThemeMascot</span> Agency</div>
-        </div>
-      </div>
+  </div>
+</section>
+
+<!-- Description Section -->
+<section class="description-section pt-50 pb-70" style="background-color: #fffaf3;">
+  <div class="auto-container">
+    <div class="text-content" data-aos="fade-up">
+      <p>
+        Hotel Ranbirs offers well-appointed Deluxe, Executive, Suite, and Budget Rooms for every kind of traveler. Whether you seek affordable comfort or lavish indulgence, each room features elegant interiors, top-notch amenities, and thoughtful touches to make your stay memorable. Enjoy personalized service, modern bathrooms, in-room dining, and a peaceful night’s sleep in the heart of Gomti Nagar, Lucknow.
+      </p>
     </div>
-  </footer>
-  <!--End Main Footer -->
+  </div>
+</section>
 
-	</div><!-- End Page Wrapper -->
-	<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-  <script src="js/slick.min.js"></script>
-  <script src="js/slick-animation.min.js"></script>
-	<script src="js/jquery.fancybox.js"></script>
-	<script src="js/jquery-ui.js"></script>
-	<script src="js/wow.js"></script>
-	<script src="js/appear.js"></script>
-	<script src="js/owl.js"></script>
-  <script src="js/swiper.min.js"></script>
-	<script src="js/script.js"></script>
-</body>
+<!-- AOS Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true,
+    duration: 1000,
+    easing: 'ease-in-out',
+  });
+</script>
 
-
-<!-- Mirrored from html.kodesolution.com/2025/hoteler-html/page-rooms.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 08:36:24 GMT -->
-</html>
+<?php include("layouts/footer.php"); ?>
