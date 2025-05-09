@@ -60,11 +60,11 @@
               <li><a href="page-about.php">About</a></li>
               <li><a href="restaurant.php">Restaurant</a></li>
               <li><a href="banquet.php">Banquet</a></li>
-              <li><a href="rooms.php">Rooms</a></li>
+              <li><a href="page-rooms.php">Rooms</a></li>
               <li><a href="meetings.php">Meetings</a></li>
               <li><a href="careers.php">Careers</a></li>
               <li><a href="packages.php">Packages</a></li>
-              <li><a href="contact.php">Contact</a></li>
+              <li><a href="page-contact.php">Contact</a></li>
             </ul>
           </nav>
           <!-- Main Menu End-->
