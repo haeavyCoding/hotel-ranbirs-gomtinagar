@@ -1,9 +1,116 @@
 <?php include("layouts/header.php"); ?>
+
+<style>
+  
+    :root {
+      --theme-color1: #AE7D54;       /* Primary brown */
+      --theme-color1-rgb: 174, 125, 84;
+      --theme-color2: #fdece3;       /* Light peach */
+      --theme-color3: #faf7f2;       /* Off-white */
+      --theme-color-light: #ffffff;  /* Pure white */
+      --theme-color-dark: #121212;   /* Near black */
+      --text-color:rgb(196, 196, 196);        /* Medium gray */
+      --headings-color: #121212;    /* Dark headings */
+      --accent-color: #b34700;      /* Warning orange */
+      --secondary-accent: #ff8800;  /* Bright orange */
+    }
+  /* Animation Classes */
+  .float-anim {
+    animation: float 6s ease-in-out infinite;
+  }
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+  }
+  
+  .pulse-anim {
+    animation: pulse 2s ease infinite;
+  }
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  .border-glow {
+    animation: border-glow 3s ease infinite alternate;
+  }
+  @keyframes border-glow {
+    from { box-shadow: 0 0 5px rgba(var(--theme-color1-rgb), 0.5); }
+    to { box-shadow: 0 0 20px rgba(var(--theme-color1-rgb), 0.8); }
+  }
+  
+  /* Custom Styles */
+  .page-title {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+  }
+  .page-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-1);
+    z-index: -1;
+  }
+  
+  .dish-card {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(var(--theme-color1-rgb), 0.1);
+  }
+  .dish-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  }
+  
+  .menu-highlight {
+    position: relative;
+    overflow: hidden;
+  }
+  .menu-highlight::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--theme-color1);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  .menu-highlight:hover::after {
+    transform: scaleX(1);
+  }
+  h1, h2, h3 {
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-weight: 600;
+  }
+/* For very small devices (up to 480px) */
+@media (max-width: 991px) {
+  h1, h2, h3 {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif !important;
+  }
+  .btn-lg {
+    font-size: 0.85rem;
+    padding: 0.6rem 1.2rem;
+  }
+  .feature-card .icon-box {
+    font-size: 1.2rem;
+  }
+}
+</style>
 <!-- Start main-content -->
 <section class="page-title" style="background-image: url(images/background/page-title-bg.png);">
 	<div class="auto-container">
 		<div class="title-outer text-center">
-			<h1 class="title">Contact Us</h1>
+			<h1 class="title" class="title" style="color: var(--theme-color1);">Contact Us</h1>
 			<ul class="page-breadcrumb">
 				<li><a href="index.php">Home</a></li>
 				<li>Contact</li>

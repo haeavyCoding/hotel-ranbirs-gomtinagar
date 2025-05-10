@@ -1,4 +1,110 @@
 <?php include("layouts/header.php"); ?>
+<style>
+    
+  :root {
+    --theme-color1: #AE7D54;       /* Primary brown */
+    --theme-color1-rgb: 174, 125, 84;
+    --theme-color2: #fdece3;       /* Light peach */
+    --theme-color3: #faf7f2;       /* Off-white */
+    --theme-color-light: #ffffff;  /* Pure white */
+    --theme-color-dark: #121212;   /* Near black */
+    --text-color:rgb(196, 196, 196);        /* Medium gray */
+    --headings-color: #121212;    /* Dark headings */
+    --accent-color: #b34700;      /* Warning orange */
+    --secondary-accent: #ff8800;  /* Bright orange */
+  }
+/* Animation Classes */
+.float-anim {
+  animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+  
+.pulse-anim {
+  animation: pulse 2s ease infinite;
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+  
+.border-glow {
+  animation: border-glow 3s ease infinite alternate;
+}
+@keyframes border-glow {
+  from { box-shadow: 0 0 5px rgba(var(--theme-color1-rgb), 0.5); }
+  to { box-shadow: 0 0 20px rgba(var(--theme-color1-rgb), 0.8); }
+}
+  
+/* Custom Styles */
+.page-title {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+.page-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--gradient-1);
+  z-index: -1;
+}
+  
+.dish-card {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(var(--theme-color1-rgb), 0.1);
+}
+.dish-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+  
+.menu-highlight {
+  position: relative;
+  overflow: hidden;
+}
+.menu-highlight::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--theme-color1);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+.menu-highlight:hover::after {
+  transform: scaleX(1);
+}
+h1, h2, h3 {
+  font-size: 2.5rem;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-weight: 600;
+}
+ For very small devices (up to 480px) */
+edia (max-width: 991px) {
+h1, h2, h3 {
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+.btn-lg {
+  font-size: 0.85rem;
+  padding: 0.6rem 1.2rem;
+}
+.feature-card .icon-box {
+  font-size: 1.2rem;
+}
+}
+</style>
   <!-- Banner Section -->
   <section id="home" class="banner-section-four">
     <div class="outer-box" data-background="images/background/bg4.jpg">
@@ -106,10 +212,10 @@
         <!-- Image Column -->
         <div class="image-column col-lg-7 col-xl-8">
           <div class="inner-column">
-            <figure class="image-1 overlay-anim wow reveal-right tm-gsap-img-parallax overflow-hidden"><img src="images/ranbirsrooms1 (1).jpg" alt="Hotel Ranbirs Luxury Lobby"></figure>
+            <figure class="image-1 overlay-anim wow reveal-right tm-gsap-img-parallax overflow-hidden"><img src="images/rooms/123.png" alt="Hotel Ranbirs Luxury Lobby"></figure>
             <figure class="image-2 wow reveal-right tm-gsap-img-parallax overflow-hidden">
-              <img src="images/resource/about8-2.jpg" alt="Deluxe Room at Hotel Ranbirs">
-              <img src="images/resource/about8-3.jpg" alt="Posadian Restaurant at Hotel Ranbirs">
+              <img src="images/restaurant.jpeg" alt="Deluxe Room at Hotel Ranbirs">
+              <img src="images/posadium.jpeg" alt="Posadian Restaurant at Hotel Ranbirs">
             </figure>
           </div>
         </div>
@@ -208,8 +314,8 @@
               <div class="inner-column">
                 <div class="text wow fadeInLeft" data-wow-delay="300ms">HOTEL RANBIRS</div>
                 <div class="image-box">
-                  <figure class="image-1 overlay-anim wow reveal-left tm-gsap-img-parallax overflow-hidden"><img src="images/resource/pricing1-1.jpg" alt="Deluxe Room at Hotel Ranbirs"></figure>
-                  <figure class="image-2 overlay-anim wow reveal-left"><img src="images/resource/pricing1-2.jpg" alt="Deluxe Room Bathroom"></figure>
+                  <figure class="image-1 overlay-anim wow reveal-left tm-gsap-img-parallax overflow-hidden"><img src="images/rooms/delux.jpeg" alt="Deluxe Room at Hotel Ranbirs"></figure>
+                  <figure class="image-2 overlay-anim wow reveal-left"><img src="images\rooms\delux1.jpeg" alt="Deluxe Room Bathroom"></figure>
                 </div>
               </div>
             </div>
@@ -249,8 +355,8 @@
               <div class="inner-column">
                 <div class="text wow fadeInLeft" data-wow-delay="300ms">HOTEL RANBIRS</div>
                 <div class="image-box">
-                  <figure class="image-1 overlay-anim wow reveal-right tm-gsap-img-parallax overflow-hidden"><img src="images/resource/pricing1-3.jpg" alt="Executive Room at Hotel Ranbirs"></figure>
-                  <figure class="image-2 overlay-anim wow reveal-right"><img src="images/resource/pricing1-4.jpg" alt="Executive Room Seating Area"></figure>
+                  <figure class="image-1 overlay-anim wow reveal-right tm-gsap-img-parallax overflow-hidden"><img src="images/rooms/executive.jpeg" alt="Executive Room at Hotel Ranbirs"></figure>
+                  <figure class="image-2 overlay-anim wow reveal-right"><img src="images\rooms\delux1.jpeg" alt="Executive Room Seating Area"></figure>
                 </div>
               </div>
             </div>
@@ -290,8 +396,8 @@
               <div class="inner-column">
                 <div class="text wow fadeInLeft" data-wow-delay="300ms">HOTEL RANBIRS</div>
                 <div class="image-box">
-                  <figure class="image-1 overlay-anim wow reveal-left tm-gsap-img-parallax overflow-hidden"><img src="images/resource/pricing1-1.jpg" alt="Suite Room at Hotel Ranbirs"></figure>
-                  <figure class="image-2 overlay-anim wow reveal-left"><img src="images/resource/pricing1-2.jpg" alt="Suite Room Living Area"></figure>
+                  <figure class="image-1 overlay-anim wow reveal-left tm-gsap-img-parallax overflow-hidden"><img src="images/rooms/suite.jpeg" alt="Suite Room at Hotel Ranbirs"></figure>
+                  <figure class="image-2 overlay-anim wow reveal-left"><img src="images/rooms/delux1.jpeg" alt="Suite Room Living Area"></figure>
                 </div>
               </div>
             </div>

@@ -2,6 +2,18 @@
 
 <style>
   
+    :root {
+      --theme-color1: #AE7D54;       /* Primary brown */
+      --theme-color1-rgb: 174, 125, 84;
+      --theme-color2: #fdece3;       /* Light peach */
+      --theme-color3: #faf7f2;       /* Off-white */
+      --theme-color-light: #ffffff;  /* Pure white */
+      --theme-color-dark: #121212;   /* Near black */
+      --text-color:rgb(196, 196, 196);        /* Medium gray */
+      --headings-color: #121212;    /* Dark headings */
+      --accent-color: #b34700;      /* Warning orange */
+      --secondary-accent: #ff8800;  /* Bright orange */
+    }
   /* Animation Classes */
   .float-anim {
     animation: float 6s ease-in-out infinite;
@@ -101,7 +113,7 @@
 <!-- Page Title Section with Parallax -->
 <section class="page-title" style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80')">
   <div class="auto-container text-center" data-aos="fade-down" data-aos-delay="100">
-    <h1 class="title text-white" data-aos="fade-up" data-aos-delay="200">Dine with Delight at Hotel Ranbirs</h1>
+    <h1 class="title" style="color: var(--theme-color1);" data-aos="fade-up" data-aos-delay="200">Dine with Delight at Hotel Ranbirs</h1>
     <ul class="page-breadcrumb" data-aos="fade-up" data-aos-delay="300">
       <li><a href="index.html" style="color: var(--theme-color1);">Home</a></li>
       <li class="text-white">Restaurant & Rooftop Bar</li>

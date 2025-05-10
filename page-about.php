@@ -1,9 +1,116 @@
 <?php include("layouts/header.php"); ?>
+
+<style>
+  
+    :root {
+      --theme-color1: #AE7D54;       /* Primary brown */
+      --theme-color1-rgb: 174, 125, 84;
+      --theme-color2: #fdece3;       /* Light peach */
+      --theme-color3: #faf7f2;       /* Off-white */
+      --theme-color-light: #ffffff;  /* Pure white */
+      --theme-color-dark: #121212;   /* Near black */
+      --text-color:rgb(196, 196, 196);        /* Medium gray */
+      --headings-color: #121212;    /* Dark headings */
+      --accent-color: #b34700;      /* Warning orange */
+      --secondary-accent: #ff8800;  /* Bright orange */
+    }
+  /* Animation Classes */
+  .float-anim {
+    animation: float 6s ease-in-out infinite;
+  }
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+  }
+  
+  .pulse-anim {
+    animation: pulse 2s ease infinite;
+  }
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  .border-glow {
+    animation: border-glow 3s ease infinite alternate;
+  }
+  @keyframes border-glow {
+    from { box-shadow: 0 0 5px rgba(var(--theme-color1-rgb), 0.5); }
+    to { box-shadow: 0 0 20px rgba(var(--theme-color1-rgb), 0.8); }
+  }
+  
+  /* Custom Styles */
+  .page-title {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+  }
+  .page-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-1);
+    z-index: -1;
+  }
+  
+  .dish-card {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(var(--theme-color1-rgb), 0.1);
+  }
+  .dish-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  }
+  
+  .menu-highlight {
+    position: relative;
+    overflow: hidden;
+  }
+  .menu-highlight::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--theme-color1);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  .menu-highlight:hover::after {
+    transform: scaleX(1);
+  }
+  h1, h2, h3 {
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-weight: 600;
+  }
+/* For very small devices (up to 480px) */
+@media (max-width: 991px) {
+  h1, h2, h3 {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif !important;
+  }
+  .btn-lg {
+    font-size: 0.85rem;
+    padding: 0.6rem 1.2rem;
+  }
+  .feature-card .icon-box {
+    font-size: 1.2rem;
+  }
+}
+</style>
 	<!-- Start main-content -->
 	<section class="page-title" style="background-image: url(images/background/page-title-bg.png);">
 		<div class="auto-container">
 			<div class="title-outer text-center">
-				<h1 class="title">Welcome to Hotel Ranbirs, Gomti Nagar, Lucknow</h1>
+				<h1 class="title" class="title" style="color: var(--theme-color1);">Welcome to Hotel Ranbirs, Gomti Nagar, Lucknow</h1>
 				<ul class="page-breadcrumb">
 					<li><a href="index.html">Home</a></li>
 					<li>About Us</li>
@@ -248,5 +355,23 @@
       </div>
     </div>
   </section>
+  
+<!-- CTA Section with Parallax -->
+<section class="py-4 position-relative overflow-hidden" style="background: url('https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') no-repeat center center/cover;">
+  <div class="overlay" style="background: rgba(var(--theme-color-black-rgb), 0.7); position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+  <div class="auto-container position-relative text-center" style="z-index: 1;" data-aos="zoom-in">
+    <h2 class="text-white mb-4" style="font-family: var(--title-font);">Ready to Plan Your Dream Event?</h2>
+    <p class="text-white mb-5">Contact us today to book your date and customize your event package with our professional planners.</p>
+    <div class="d-flex justify-content-center gap-3">
+      <a href="contact.html" class="btn btn-lg pulse-anim" style="background-color: var(--theme-color1); color: white;">Book a Tour</a>
+      <a href="tel:+919876543210" class="btn btn-lg btn-outline-light">Call Now</a>
+    </div>
+  </div>
+  
+  <!-- Floating Decorative Elements -->
+  <img src="https://cdn-icons-png.flaticon.com/512/3048/3048127.png" class="position-absolute float-anim" style="width: 80px; top: 20%; left: 10%; animation-delay: 0s;">
+  <img src="https://cdn-icons-png.flaticon.com/512/3048/3048127.png" class="position-absolute float-anim" style="width: 60px; bottom: 30%; right: 15%; animation-delay: 1s;">
+</section>
+
   <!-- End Testimonial Section Five -->
 <?php include("layouts/footer.php"); ?>

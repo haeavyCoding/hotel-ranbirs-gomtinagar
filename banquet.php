@@ -8,8 +8,20 @@
 <!-- AOS CSS -->
 <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-<!-- Custom CSS -->
 <style>
+  
+    :root {
+      --theme-color1: #AE7D54;       /* Primary brown */
+      --theme-color1-rgb: 174, 125, 84;
+      --theme-color2: #fdece3;       /* Light peach */
+      --theme-color3: #faf7f2;       /* Off-white */
+      --theme-color-light: #ffffff;  /* Pure white */
+      --theme-color-dark: #121212;   /* Near black */
+      --text-color:rgb(196, 196, 196);        /* Medium gray */
+      --headings-color: #121212;    /* Dark headings */
+      --accent-color: #b34700;      /* Warning orange */
+      --secondary-accent: #ff8800;  /* Bright orange */
+    }
   /* Animation Classes */
   .float-anim {
     animation: float 6s ease-in-out infinite;
@@ -37,7 +49,7 @@
     to { box-shadow: 0 0 20px rgba(var(--theme-color1-rgb), 0.8); }
   }
   
-  /* Page Title Styles */
+  /* Custom Styles */
   .page-title {
     background-size: cover;
     background-position: center;
@@ -55,29 +67,57 @@
     z-index: -1;
   }
   
-  /* Card Hover Effects */
-  .hover-card {
+  .dish-card {
     transition: all 0.3s ease;
     border: 1px solid rgba(var(--theme-color1-rgb), 0.1);
   }
-  .hover-card:hover {
+  .dish-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0,0,0,0.1);
   }
   
-  /* Section Backgrounds */
-  .bg-accent {
-    background-color: var(--theme-color3);
+  .menu-highlight {
+    position: relative;
+    overflow: hidden;
   }
-  .bg-primary {
-    background-color: var(--theme-color1) !important;
+  .menu-highlight::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--theme-color1);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
   }
+  .menu-highlight:hover::after {
+    transform: scaleX(1);
+  }
+  h1, h2, h3 {
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-weight: 600;
+  }
+/* For very small devices (up to 480px) */
+@media (max-width: 991px) {
+  h1, h2, h3 {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif !important;
+  }
+  .btn-lg {
+    font-size: 0.85rem;
+    padding: 0.6rem 1.2rem;
+  }
+  .feature-card .icon-box {
+    font-size: 1.2rem;
+  }
+}
 </style>
-
 <!-- Page Title Section with Parallax -->
 <section class="page-title" style="background-image: url('https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')">
   <div class="auto-container text-center" data-aos="fade-down" data-aos-delay="100">
-    <h1 class="title text-white" style="font-family: var(--title-font);">Host Unforgettable Events at Our Banquet Hall</h1>
+    <h1 class="title" style="color: var(--theme-color1);">Host Unforgettable Events at Our Banquet Hall</h1>
     <ul class="page-breadcrumb" data-aos="fade-up" data-aos-delay="200">
       <li><a href="index.html" style="color: var(--theme-color1);">Home</a></li>
       <li class="text-white">Banquet</li>
@@ -287,7 +327,7 @@
 </section>
 
 <!-- CTA Section with Parallax -->
-<section class="py-120 position-relative overflow-hidden" style="background: url('https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') no-repeat center center/cover;">
+<section class="py-4 position-relative overflow-hidden" style="background: url('https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') no-repeat center center/cover;">
   <div class="overlay" style="background: rgba(var(--theme-color-black-rgb), 0.7); position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
   <div class="auto-container position-relative text-center" style="z-index: 1;" data-aos="zoom-in">
     <h2 class="text-white mb-4" style="font-family: var(--title-font);">Ready to Plan Your Dream Event?</h2>
