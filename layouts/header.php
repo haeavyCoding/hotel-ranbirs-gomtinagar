@@ -37,10 +37,10 @@
         <!-- Top-right -->
         <div class="top-right">
           <ul class="social-icon-one">
-            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/HotelRanbir"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/ranbirshotel/?hl=en"><i class="fa-brands fa-instagram"></i></a></li>
             <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-            <li><a href="#"><i class="fab fa-x-twitter"></i></a></li>
+            <li><a href="https://x.com/i/flow/login?redirect_after_login=%2Fhotelranbirs"><i class="fab fa-x-twitter"></i></a></li>
           </ul>
         </div>
       </div>
@@ -71,15 +71,6 @@
         </div>
 
         <div class="outer-box">
-          <div class="ui-btn-outer">
-            <button class="ui-btn ui-btn search-btn">
-              <span class="icon lnr lnr-icon-search"></span>
-            </button>
-            <a href="shop-cart.html" class="ui-btn cart-btn">
-              <i class="lnr-icon-shopping-cart"></i>
-              <span class="items-count">0</span>
-            </a>
-          </div>
           <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
           <!-- Mobile Nav toggler -->
         </div>

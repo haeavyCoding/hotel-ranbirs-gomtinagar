@@ -19,7 +19,7 @@
   
   /* Page Title Section */
   .page-title {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/background/page-title-bg.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(images/background/meeting-backgound.jpg);
     background-size: cover;
     background-position: center;
     padding: 120px 0 80px;
@@ -332,7 +332,7 @@
     <div class="row align-items-center">
       <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-delay="200">
         <div class="image-container">
-          <img src="images/banner/banner1-1.jpg" alt="Meeting Hall at Hotel Ranbirs" class="img-fluid rounded">
+          <img src="images\banner\event.jpg" alt="Meeting Hall at Hotel Ranbirs" class="img-fluid rounded">
           <div class="overlay-box" data-aos="fade" data-aos-delay="600">
             <div class="overlay-inner">
               <h4>2,000 sq. ft. Event Space</h4>
@@ -478,16 +478,16 @@
     <div class="row gallery-grid">
       <div class="col-lg-4 col-md-6 gallery-item" data-aos="zoom-in" data-aos-delay="200">
         <div class="gallery-card">
-          <img src="images/gallery/event1.jpg" alt="Grand Ballroom" class="img-fluid">
+          <img src="images\banner\banquet1full.jpg" alt="Grand Ballroom" class="img-fluid">
           <div class="gallery-overlay">
-            <h5>Grand Ballroom</h5>
-            <p>Capacity: 500 guests</p>
+            <h5>Banquet Hall</h5>
+            <p>Capacity: 300 guests</p>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 gallery-item" data-aos="zoom-in" data-aos-delay="300">
         <div class="gallery-card">
-          <img src="images/gallery/event2.jpg" alt="Conference Room" class="img-fluid">
+          <img src="images\banner\restaurantfullsize1.JPG" alt="Conference Room" class="img-fluid">
           <div class="gallery-overlay">
             <h5>Executive Boardroom</h5>
             <p>Capacity: 30 guests</p>
@@ -496,9 +496,9 @@
       </div>
       <div class="col-lg-4 col-md-6 gallery-item" data-aos="zoom-in" data-aos-delay="400">
         <div class="gallery-card">
-          <img src="images/gallery/event3.jpg" alt="Outdoor Venue" class="img-fluid">
+          <img src="images\banner\restaurantfullsize1.JPG" alt="Outdoor Venue" class="img-fluid">
           <div class="gallery-overlay">
-            <h5>Garden Pavilion</h5>
+            <h5>Restaurant</h5>
             <p>Capacity: 200 guests</p>
           </div>
         </div>

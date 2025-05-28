@@ -49,14 +49,18 @@
   
   /* Page Title */
   .page-title {
-    background: linear-gradient(rgba(var(--theme-color1-rgb), 0.7), rgba(var(--theme-color1-rgb), 0.7)), 
-                url('images/background/meeting-backgound.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 120px 0 80px;
-    color: var(--theme-color-light);
-    position: relative;
-  }
+  background: linear-gradient(
+                  rgba(0, 0, 0, 0.3), 
+                  rgba(0, 0, 0, 0.1)
+              ), 
+              url('images/background/meeting-backgound.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 120px 0 80px;
+  color: var(--theme-color-light);
+  position: relative;
+}
+
   
   .page-title h1 {
     font-size: 3rem;
@@ -505,7 +509,7 @@
     <div class="row">
       <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
         <div class="gallery-item">
-          <img src="images/meetings/meeting1.jpg" alt="Boardroom Setup" class="gallery-img">
+          <img src="images\banner\room1fullsize.JPG" alt="Boardroom Setup" class="gallery-img">
           <div class="gallery-overlay">
             <h5>Executive Boardroom</h5>
             <p>U-shaped setup for 18 persons</p>
@@ -514,7 +518,7 @@
       </div>
       <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
         <div class="gallery-item">
-          <img src="images/meetings/meeting2.jpg" alt="Conference Setup" class="gallery-img">
+          <img src="images\banner\room1fullsize.JPG" alt="Conference Setup" class="gallery-img">
           <div class="gallery-overlay">
             <h5>Conference Style</h5>
             <p>Theater setup for 30 persons</p>
@@ -523,7 +527,7 @@
       </div>
       <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
         <div class="gallery-item">
-          <img src="images/meetings/meeting3.jpg" alt="Training Room" class="gallery-img">
+          <img src="images\banner\room1fullsize.JPG" alt="Training Room" class="gallery-img">
           <div class="gallery-overlay">
             <h5>Training Room</h5>
             <p>Classroom setup for 25 persons</p>

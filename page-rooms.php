@@ -3,12 +3,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Rooms & Suites at Hotel Ranbirs – Premium Accommodation in Gomti Nagar</title>
-  <meta name="description" content="Experience luxury and comfort in our premium rooms & suites at Hotel Ranbirs, Gomti Nagar. Choose from Deluxe, Executive, Suite or Budget accommodations with modern amenities.">
+  <title>Luxury Rooms & Suites in Gomti Nagar | Hotel Ranbirs - Best Accommodation in Lucknow</title>
+  <meta name="description" content="Experience premium comfort in our luxury rooms & suites at Hotel Ranbirs, Gomti Nagar. Choose from Deluxe, Executive, Suite or Budget rooms with modern amenities, free WiFi & excellent service.">
+  <meta name="keywords" content="hotel in Gomti Nagar, luxury hotel Lucknow, best hotels in Lucknow, Hotel Ranbirs rooms, premium accommodation, Gomti Nagar hotels">
+  <link rel="canonical" href="https://www.hotelranbirs.com/rooms" />
+  <meta property="og:title" content="Luxury Rooms & Suites in Gomti Nagar | Hotel Ranbirs">
+  <meta property="og:description" content="Premium accommodation at Hotel Ranbirs, Gomti Nagar - Experience luxury and comfort in our well-appointed rooms and suites.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.hotelranbirs.com/rooms">
+  <meta property="og:image" content="https://www.hotelranbirs.com/images/resource/room-collage.jpg">
+  <meta property="og:site_name" content="Hotel Ranbirs">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Hotel",
+    "name": "Hotel Ranbirs",
+    "description": "Premium hotel accommodation in Gomti Nagar, Lucknow",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "CP 125, Viraj Khand",
+      "addressLocality": "Gomti Nagar",
+      "addressRegion": "Uttar Pradesh",
+      "postalCode": "226010",
+      "addressCountry": "India"
+    },
+    "telephone": "+91-8429521002",
+    "url": "https://www.hotelranbirs.com",
+    "priceRange": "₹5000 - ₹12000",
+    "amenityFeature": [
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "Free WiFi"
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "Air Conditioning"
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "Restaurant"
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "Gym"
+      }
+    ],
+    "image": "https://www.hotelranbirs.com/images/resource/room-collage.jpg",
+    "numberOfRooms": "30"
+  }
+  </script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
-    
     :root {
       --theme-color1: #AE7D54;       /* Primary brown */
       --theme-color1-rgb: 174, 125, 84;
@@ -117,10 +163,10 @@
 <body>
 
 <!-- Page Title -->
-<section class="page-title" style="background-image: url(images/background/page-title-bg.png); background-color: var(--theme-color2);">
+<section class="page-title" style="background-image: url(images/banner/room1fullsize.JPG); background-color: var(--theme-color2);">
   <div class="auto-container">
     <div class="title-outer text-center" data-aos="fade-down">
-      <h1 class="title" style="color: var(--theme-color1);">Premium Rooms & Suites in Gomti Nagar</h1>
+      <h1 class="title" style="color: var(--theme-color1);">Luxury Rooms & Suites in Gomti Nagar, Lucknow</h1>
       <p class="subtitle" style="color: var(--text-color);">Experience comfort and luxury in every space</p>
       <ul class="page-breadcrumb">
         <li><a href="index.html">Home</a></li>
@@ -136,13 +182,13 @@
     <div class="row align-items-center">
       <div class="col-lg-6" data-aos="fade-right">
         <div class="image-box">
-          <img src="images/resource/room-collage.jpg" alt="Hotel Ranbirs Rooms" class="rounded-lg shadow-lg">
+          <img src="images\banner\room1fullsize.JPG" alt="Luxury rooms at Hotel Ranbirs Gomti Nagar" class="rounded-lg shadow-lg">
         </div>
       </div>
       <div class="col-lg-6" data-aos="fade-left">
         <div class="content-box pl-lg-4">
           <h2 class="mb-4" style="color: var(--theme-color1);">🛏️ ROOMS DETAILS</h2>
-          <h3 class="mb-3">Premium Rooms & Suites in Gomti Nagar, Lucknow</h3>
+          <h3 class="mb-3">Premium Accommodation in Gomti Nagar</h3>
           <p style="color: var(--text-color);">At Hotel Ranbirs, each room is designed to offer unmatched comfort and style. Whether you're booking a business trip or a relaxing getaway, our spacious and well-furnished rooms offer the perfect environment for rest and productivity.</p>
           
           <div class="features-box mt-5">
@@ -175,10 +221,10 @@
       <div class="room-block col-lg-6 col-md-6 mb-4" data-aos="fade-up">
         <div class="inner-box" style="border: 1px solid var(--theme-color2); background: var(--theme-color-light);">
           <div class="image-box">
-            <figure class="image-2 overlay-anim"><img src="images/resource/room-1.jpg" alt="Deluxe Room"></figure>
+            <figure class="image-2 overlay-anim"><img src="images\banner\room1fullsize.JPG" alt="Deluxe Room at Hotel Ranbirs Gomti Nagar"></figure>
           </div>
           <div class="content-box">
-            <h6 class="title" style="color: var(--theme-color1);"><a href="room-details.html">Deluxe Room</a></h6>
+            <h3 class="title" style="color: var(--theme-color1);"><a href="room-details.html">Deluxe Room</a></h3>
             <span class="price" style="color: var(--accent-color);">₹7,000 / NIGHT</span>
             <p style="color: var(--text-color);">Elegantly styled and spacious, the Deluxe Room features modern furnishings, plush bedding, and all essential comforts for both business and leisure travelers.</p>
             <div class="room-features mt-3">
@@ -204,10 +250,10 @@
       <div class="room-block col-lg-6 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
         <div class="inner-box" style="border: 1px solid var(--theme-color2); background: var(--theme-color-light);">
           <div class="image-box">
-            <figure class="image-2 overlay-anim"><img src="images/resource/room-2.jpg" alt="Executive Room"></figure>
+            <figure class="image-2 overlay-anim"><img src="images\banner\room1fullsize.JPG" alt="Executive Room at Hotel Ranbirs Lucknow"></figure>
           </div>
           <div class="content-box">
-            <h6 class="title" style="color: var(--theme-color1);"><a href="room-details.html">Executive Room</a></h6>
+            <h3 class="title" style="color: var(--theme-color1);"><a href="room-details.html">Executive Room</a></h3>
             <span class="price" style="color: var(--accent-color);">₹8,000 / NIGHT</span>
             <p style="color: var(--text-color);">Designed for luxury and convenience, the Executive Room features a workstation, complimentary high-speed internet, and enhanced in-room amenities.</p>
             <div class="room-features mt-3">
@@ -233,10 +279,10 @@
       <div class="room-block col-lg-6 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
         <div class="inner-box" style="border: 1px solid var(--theme-color2); background: var(--theme-color-light);">
           <div class="image-box">
-            <figure class="image-2 overlay-anim"><img src="images/resource/room-3.jpg" alt="Suite Room"></figure>
+            <figure class="image-2 overlay-anim"><img src="images\banner\room1fullsize.JPG" alt="Family Suite at Hotel Ranbirs Gomti Nagar"></figure>
           </div>
           <div class="content-box">
-            <h6 class="title" style="color: var(--theme-color1);"><a href="room-details.html">Family Suite</a></h6>
+            <h3 class="title" style="color: var(--theme-color1);"><a href="room-details.html">Family Suite</a></h3>
             <span class="price" style="color: var(--accent-color);">₹12,000 / NIGHT</span>
             <p style="color: var(--text-color);">The luxurious Suite offers a separate living area, king-size bed, premium bath essentials, and a beautiful city view to elevate your stay experience.</p>
             <div class="room-features mt-3">
@@ -262,10 +308,10 @@
       <div class="room-block col-lg-6 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
         <div class="inner-box" style="border: 1px solid var(--theme-color2); background: var(--theme-color-light);">
           <div class="image-box">
-            <figure class="image-2 overlay-anim"><img src="images/resource/room-4.jpg" alt="Budget Room"></figure>
+            <figure class="image-2 overlay-anim"><img src="images\banner\room1fullsize.JPG" alt="Budget Room at Hotel Ranbirs Lucknow"></figure>
           </div>
           <div class="content-box">
-            <h6 class="title" style="color: var(--theme-color1);"><a href="room-details.html">Budget Room</a></h6>
+            <h3 class="title" style="color: var(--theme-color1);"><a href="room-details.html">Budget Room</a></h3>
             <span class="price" style="color: var(--accent-color);">₹5,000 / NIGHT</span>
             <p style="color: var(--text-color);">Affordable yet comfortable, the Budget Room is ideal for short stays. Enjoy a restful bed, clean en-suite, and modern essentials without compromise.</p>
             <div class="room-features mt-3">
@@ -339,28 +385,28 @@
     </div>
     <div class="row">
       <div class="facility-block col-lg-3 col-md-6 mb-4" data-aos="zoom-in">
-        <div class="inner-box text-center" style="background-color: var(--theme-color-light); border: 1px solid var(--theme-color2);">
+        <div class="inner-box text-center py-4" style="background-color: var(--theme-color-light); border: 1px solid var(--theme-color2);">
           <div class="icon-box"><i class="fa fa-wifi fa-2x mb-2" style="color: var(--accent-color);"></i></div>
           <h4 style="color: var(--theme-color1);">Wi-Fi Connectivity</h4>
           <p style="color: var(--text-color);">High-speed internet throughout the hotel</p>
         </div>
       </div>
       <div class="facility-block col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
-        <div class="inner-box text-center" style="background-color: var(--theme-color-light); border: 1px solid var(--theme-color2);">
+        <div class="inner-box text-center py-4" style="background-color: var(--theme-color-light); border: 1px solid var(--theme-color2);">
           <div class="icon-box"><i class="fa fa-cutlery fa-2x mb-2" style="color: var(--accent-color);"></i></div>
           <h4 style="color: var(--theme-color1);">Restaurant</h4>
           <p style="color: var(--text-color);">Multi-cuisine dining experience</p>
         </div>
       </div>
       <div class="facility-block col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
-        <div class="inner-box text-center" style="background-color: var(--theme-color-light); border: 1px solid var(--theme-color2);">
+        <div class="inner-box text-center py-4" style="background-color: var(--theme-color-light); border: 1px solid var(--theme-color2);">
           <div class="icon-box"><i class="fa fa-heartbeat fa-2x mb-2" style="color: var(--accent-color);"></i></div>
           <h4 style="color: var(--theme-color1);">Gymnasium</h4>
           <p style="color: var(--text-color);">Modern fitness equipment</p>
         </div>
       </div>
       <div class="facility-block col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
-        <div class="inner-box text-center" style="background-color: var(--theme-color-light); border: 1px solid var(--theme-color2);">
+        <div class="inner-box text-center py-4" style="background-color: var(--theme-color-light); border: 1px solid var(--theme-color2);">
           <div class="icon-box"><i class="fa fa-glass fa-2x mb-2" style="color: var(--accent-color);"></i></div>
           <h4 style="color: var(--theme-color1);">Open Bar</h4>
           <p style="color: var(--text-color);">Premium beverages & cocktails</p>
@@ -383,10 +429,9 @@
   </div>
   
   <!-- Floating food decoration -->
-  <img src="https://cdn-icons-png.flaticon.com/512/5787/5787068.png" class="position-absolute float-anim" style="width: 80px; top: 20%; left: 10%; animation-delay: 0s;">
-  <img src="https://cdn-icons-png.flaticon.com/512/3194/3194889.png" class="position-absolute float-anim" style="width: 60px; bottom: 30%; right: 15%; animation-delay: 1s;">
+  <img src="https://cdn-icons-png.flaticon.com/512/5787/5787068.png" class="position-absolute float-anim" style="width: 80px; top: 20%; left: 10%; animation-delay: 0s;" alt="Hotel decoration">
+  <img src="https://cdn-icons-png.flaticon.com/512/3194/3194889.png" class="position-absolute float-anim" style="width: 60px; bottom: 30%; right: 15%; animation-delay: 1s;" alt="Hotel decoration">
 </section>
-
 
 <!-- AOS Script -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

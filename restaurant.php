@@ -1,7 +1,11 @@
-<?php include('layouts/header.php'); ?>
+<?php 
+$pageTitle = "Fine Dining & Rooftop Bar | Hotel Ranbirs, Gomti Nagar Lucknow";
+$pageDescription = "Experience exquisite multi-cuisine dining at Poseidon Restaurant & vibrant cocktails at Aabshaar Rooftop Bar. Best fine dining in Gomti Nagar, Lucknow.";
+$pageKeywords = "best restaurant in Lucknow, rooftop bar Gomti Nagar, fine dining Lucknow, Hotel Ranbirs restaurant, Poseidon Lucknow, Aabshaar bar";
+include('layouts/header.php'); 
+?>
 
 <style>
-  
     :root {
       --theme-color1: #AE7D54;       /* Primary brown */
       --theme-color1-rgb: 174, 125, 84;
@@ -14,6 +18,7 @@
       --accent-color: #b34700;      /* Warning orange */
       --secondary-accent: #ff8800;  /* Bright orange */
     }
+  
   /* Animation Classes */
   .float-anim {
     animation: float 6s ease-in-out infinite;
@@ -91,27 +96,74 @@
     font-family: Arial, Helvetica, sans-serif !important;
     font-weight: 600;
   }
-/* For very small devices (up to 480px) */
-@media (max-width: 991px) {
-  h1, h2, h3 {
-    font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif !important;
+  
+  /* For very small devices (up to 480px) */
+  @media (max-width: 991px) {
+    h1, h2, h3 {
+      font-size: 2rem;
+      font-family: Arial, Helvetica, sans-serif !important;
+    }
+    .btn-lg {
+      font-size: 0.85rem;
+      padding: 0.6rem 1.2rem;
+    }
+    .feature-card .icon-box {
+      font-size: 1.2rem;
+    }
   }
-  .btn-lg {
-    font-size: 0.85rem;
-    padding: 0.6rem 1.2rem;
-  }
-  .feature-card .icon-box {
-    font-size: 1.2rem;
+</style>
+
+<!-- Schema Markup for Restaurant -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Poseidon Restaurant at Hotel Ranbirs",
+  "description": "Multi-cuisine restaurant serving authentic Indian delicacies with Awadhi flair along with international favorites in Gomti Nagar, Lucknow.",
+  "image": "https://images.unsplash.com/photo-1576765607924-b6c69c207f65",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "CP 125, Viraj Khand",
+    "addressLocality": "Gomti Nagar",
+    "addressRegion": "Uttar Pradesh",
+    "postalCode": "226010",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "26.8381",
+    "longitude": "81.0019"
+  },
+  "telephone": "+919876543210",
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "opens": "07:00",
+    "closes": "23:00"
+  },
+  "servesCuisine": ["Indian", "Awadhi", "International"],
+  "priceRange": "$$",
+  "hasMenu": {
+    "@type": "Menu",
+    "name": "Poseidon Restaurant Menu",
+    "url": "#"
   }
 }
-</style>
+</script>
 
 <!-- AOS CSS -->
 <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 <!-- Page Title Section with Parallax -->
-<section class="page-title" style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80')">
+<section class="page-title" style="background-image: url('images/banner/restaurantfullsize1.JPG')">
   <div class="auto-container text-center" data-aos="fade-down" data-aos-delay="100">
     <h1 class="title" style="color: var(--theme-color1);" data-aos="fade-up" data-aos-delay="200">Dine with Delight at Hotel Ranbirs</h1>
     <ul class="page-breadcrumb" data-aos="fade-up" data-aos-delay="300">
@@ -123,9 +175,9 @@
 
 <!-- Floating Food Items Decoration -->
 <div class="position-absolute top-0 start-0 w-100 h-100 overflow-hidden" style="pointer-events: none; z-index: -1;">
-  <img src="https://cdn-icons-png.flaticon.com/512/5787/5787100.png" class="position-absolute float-anim" style="width: 80px; top: 20%; left: 5%; animation-delay: 0s;">
-  <img src="https://cdn-icons-png.flaticon.com/512/5787/5787132.png" class="position-absolute float-anim" style="width: 60px; top: 30%; right: 8%; animation-delay: 1s;">
-  <img src="https://cdn-icons-png.flaticon.com/512/3194/3194889.png" class="position-absolute float-anim" style="width: 70px; bottom: 25%; left: 10%; animation-delay: 2s;">
+  <img src="https://cdn-icons-png.flaticon.com/512/5787/5787100.png" alt="Floating food decoration" class="position-absolute float-anim" style="width: 80px; top: 20%; left: 5%; animation-delay: 0s;">
+  <img src="https://cdn-icons-png.flaticon.com/512/5787/5787132.png" alt="Floating food decoration" class="position-absolute float-anim" style="width: 60px; top: 30%; right: 8%; animation-delay: 1s;">
+  <img src="https://cdn-icons-png.flaticon.com/512/3194/3194889.png" alt="Floating food decoration" class="position-absolute float-anim" style="width: 70px; bottom: 25%; left: 10%; animation-delay: 2s;">
 </div>
 
 <!-- Welcome Section with 3D Tilt Effect -->
@@ -134,7 +186,7 @@
     <div class="row align-items-center">
       <div class="col-lg-6 mb-4 mb-lg-0" data-aos="flip-left" data-aos-delay="200">
         <div class="position-relative">
-          <img src="https://images.unsplash.com/photo-1576765607924-b6c69c207f65" alt="Poseidon Restaurant" 
+          <img src="images\banner\room1fullsize.JPG" alt="Poseidon Restaurant at Hotel Ranbirs" 
                class="img-fluid rounded shadow-lg border-glow" 
                data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-perspective="1000">
           <div class="position-absolute bottom-0 start-0 p-3 bg-white rounded-end" style="box-shadow: 0 5px 15px rgba(0,0,0,0.1);" data-aos="fade-right" data-aos-delay="400">
@@ -146,24 +198,24 @@
       <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
         <div class="pe-lg-4">
           <span class="badge mb-3 pulse-anim" style="background-color: var(--theme-color1); color: white;">FINE DINING</span>
-          <h2 class="mb-3">Poseidon – Family Restaurant</h2>
+          <h2>Poseidon – Family Restaurant</h2>
           <p class="mb-4" data-aos="fade-up" data-aos-delay="400">Hotel Ranbirs invites you to Poseidon, our cozy multi-cuisine restaurant serving authentic Indian delicacies with Awadhi flair along with international favorites. Our chefs blend traditional recipes with contemporary presentation.</p>
           
           <!-- Signature Dishes Carousel -->
           <div class="owl-carousel owl-theme" data-aos="zoom-in" data-aos-delay="500">
             <div class="dish-card p-3 rounded bg-white shadow-sm text-center mx-2">
-              <img src="https://cdn-icons-png.flaticon.com/512/5787/5787068.png" alt="Kebab" class="img-fluid mb-2" style="height: 60px;">
-              <h6 class="mb-1">Lucknowi Kebabs</h6>
+              <img src="https://cdn-icons-png.flaticon.com/512/5787/5787068.png" alt="Lucknowi Kebabs" class="img-fluid mb-2" style="height: 60px;">
+              <h3 class="h6 mb-1">Lucknowi Kebabs</h3>
               <p class="small mb-0">Signature dish</p>
             </div>
             <div class="dish-card p-3 rounded bg-white shadow-sm text-center mx-2">
-              <img src="https://cdn-icons-png.flaticon.com/512/5787/5787093.png" alt="Biryani" class="img-fluid mb-2" style="height: 60px;">
-              <h6 class="mb-1">Awadhi Biryani</h6>
+              <img src="https://cdn-icons-png.flaticon.com/512/5787/5787093.png" alt="Awadhi Biryani" class="img-fluid mb-2" style="height: 60px;">
+              <h3 class="h6 mb-1">Awadhi Biryani</h3>
               <p class="small mb-0">House special</p>
             </div>
             <div class="dish-card p-3 rounded bg-white shadow-sm text-center mx-2">
-              <img src="https://cdn-icons-png.flaticon.com/512/3194/3194889.png" alt="Dessert" class="img-fluid mb-2" style="height: 60px;">
-              <h6 class="mb-1">Royal Desserts</h6>
+              <img src="https://cdn-icons-png.flaticon.com/512/3194/3194889.png" alt="Royal Desserts" class="img-fluid mb-2" style="height: 60px;">
+              <h3 class="h6 mb-1">Royal Desserts</h3>
               <p class="small mb-0">Sweet endings</p>
             </div>
           </div>
@@ -174,47 +226,47 @@
 </section>
 
 <!-- Rooftop Bar Section with Interactive Elements -->
-<section class="pt-80 pb-80" style="background: url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80') no-repeat center center/cover; position: relative;">
+<section class="pt-80 pb-80" style="background: url('images/banner/restaurantfullsize1.JPG') no-repeat center center/cover; position: relative;">
   <div class="overlay" style="background: rgba(0,0,0,0.7); position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
   <div class="auto-container position-relative" style="z-index: 1;">
     <div class="row feature-row g-0 mb-5 overflow-hidden rounded shadow-lg" data-aos="fade-up">
       <div class="col-lg-6">
-        <img src="https://images.unsplash.com/photo-1613470208965-96b377ff8500" alt="Rooftop Bar" 
+        <img src="images\banner\hotel-ranbirs-gomti-nagar-lucknow-hotels-eseka6605u.avif" alt="Aabshaar Rooftop Bar at Hotel Ranbirs" 
              class="img-fluid w-100 h-100 object-cover" 
              style="min-height: 400px;">
       </div>
       <div class="col-lg-6 d-flex align-items-center" style="background-color: rgba(var(--theme-color-white-rgb), 0.9);">
         <div class="content-box p-5">
           <span class="badge mb-3" style="background-color: var(--theme-color1); color: white;">NIGHTLIFE</span>
-          <h2 class="mb-3">Aabshaar – Rooftop Bar & Club</h2>
+          <h2>Aabshaar – Rooftop Bar & Club</h2>
           <p class="mb-4">Elevate your evenings at our stylish rooftop bar offering panoramic views of Gomti Nagar. Enjoy crafted cocktails, premium spirits, and a selection of bar snacks in a vibrant yet relaxed atmosphere.</p>
           
           <div class="row g-3">
             <div class="col-md-6" data-aos="flip-up" data-aos-delay="100">
               <div class="p-3 rounded" style="background-color: var(--theme-color3);">
                 <i class="fas fa-cocktail mb-2" style="color: var(--theme-color1);"></i>
-                <h6 class="mb-1">Signature Cocktails</h6>
+                <h3 class="h6 mb-1">Signature Cocktails</h3>
                 <p class="small mb-0">Try our bartender's special creations</p>
               </div>
             </div>
             <div class="col-md-6" data-aos="flip-up" data-aos-delay="200">
               <div class="p-3 rounded" style="background-color: var(--theme-color3);">
                 <i class="fas fa-music mb-2" style="color: var(--theme-color1);"></i>
-                <h6 class="mb-1">Live Music</h6>
+                <h3 class="h6 mb-1">Live Music</h3>
                 <p class="small mb-0">Weekend performances</p>
               </div>
             </div>
             <div class="col-md-6" data-aos="flip-up" data-aos-delay="300">
               <div class="p-3 rounded" style="background-color: var(--theme-color3);">
                 <i class="fas fa-umbrella-beach mb-2" style="color: var(--theme-color1);"></i>
-                <h6 class="mb-1">Ambient Lighting</h6>
+                <h3 class="h6 mb-1">Ambient Lighting</h3>
                 <p class="small mb-0">Perfect evening atmosphere</p>
               </div>
             </div>
             <div class="col-md-6" data-aos="flip-up" data-aos-delay="400">
               <div class="p-3 rounded" style="background-color: var(--theme-color3);">
                 <i class="fas fa-city mb-2" style="color: var(--theme-color1);"></i>
-                <h6 class="mb-1">City Views</h6>
+                <h3 class="h6 mb-1">City Views</h3>
                 <p class="small mb-0">Panoramic Lucknow skyline</p>
               </div>
             </div>
@@ -239,13 +291,13 @@
         <div class="card h-100 border-0 overflow-hidden shadow-sm hover-effect">
           <div class="row g-0">
             <div class="col-md-5">
-              <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" 
+              <img src="images\banner\rstaurant.jpg" 
                    class="img-fluid h-100 object-cover" 
-                   alt="Restaurant Interior">
+                   alt="Poseidon Restaurant Interior">
             </div>
             <div class="col-md-7">
               <div class="card-body">
-                <h4 class="card-title"><i class="fas fa-utensils me-2" style="color: var(--theme-color1);"></i>Poseidon Restaurant</h4>
+                <h3 class="h4 card-title"><i class="fas fa-utensils me-2" style="color: var(--theme-color1);"></i>Poseidon Restaurant</h3>
                 <p class="card-text">Contemporary dining featuring traditional dishes from across India and Asia—reimagined with innovation and elegance.</p>
                 <ul class="list-unstyled">
                   <li class="mb-2"><i class="fas fa-check-circle me-2" style="color: var(--theme-color1);"></i>Breakfast: 7:00 AM - 10:30 AM</li>
@@ -263,13 +315,13 @@
         <div class="card h-100 border-0 overflow-hidden shadow-sm hover-effect">
           <div class="row g-0">
             <div class="col-md-5">
-              <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" 
+              <img src="images\banner\rooftop.avif" 
                    class="img-fluid h-100 object-cover" 
-                   alt="Rooftop Bar">
+                   alt="Aabshaar Rooftop Bar at Hotel Ranbirs">
             </div>
             <div class="col-md-7">
               <div class="card-body">
-                <h4 class="card-title"><i class="fas fa-cocktail me-2" style="color: var(--theme-color1);"></i>Aabshaar Rooftop</h4>
+                <h3 class="h4 card-title"><i class="fas fa-cocktail me-2" style="color: var(--theme-color1);"></i>Aabshaar Rooftop</h3>
                 <p class="card-text">The perfect place to unwind after work or begin your night out. Enjoy refreshing beverages against the Lucknow skyline.</p>
                 <ul class="list-unstyled">
                   <li class="mb-2"><i class="fas fa-check-circle me-2" style="color: var(--theme-color1);"></i>Evening: 5:00 PM - 11:00 PM</li>
@@ -302,7 +354,7 @@
                style="width: 80px; height: 80px; background-color: var(--theme-color1); color: white; font-size: 30px;">
             <i class="fas fa-leaf"></i>
           </div>
-          <h5>Fresh Ingredients</h5>
+          <h3 class="h5">Fresh Ingredients</h3>
           <p class="mb-0">Locally sourced produce and premium imported ingredients for authentic flavors</p>
         </div>
       </div>
@@ -313,7 +365,7 @@
                style="width: 80px; height: 80px; background-color: var(--theme-color1); color: white; font-size: 30px;">
             <i class="fas fa-cheese"></i>
           </div>
-          <h5>Expert Chefs</h5>
+          <h3 class="h5">Expert Chefs</h3>
           <p class="mb-0">Our culinary team brings decades of global experience and local expertise</p>
         </div>
       </div>
@@ -324,7 +376,7 @@
                style="width: 80px; height: 80px; background-color: var(--theme-color1); color: white; font-size: 30px;">
             <i class="fas fa-wine-glass-alt"></i>
           </div>
-          <h5>Premium Bar</h5>
+          <h3 class="h5">Premium Bar</h3>
           <p class="mb-0">Extensive selection of wines, spirits and craft cocktails curated by our mixologists</p>
         </div>
       </div>
@@ -349,9 +401,9 @@
           </div>
           <p class="mb-4"><i class="fas fa-quote-left me-2" style="color: var(--theme-color1);"></i>The kebabs at Poseidon are the best I've had outside of old Lucknow. The rooftop bar has amazing ambiance in the evenings.</p>
           <div class="d-flex align-items-center">
-            <img src="https://randomuser.me/api/portraits/women/65.jpg" class="rounded-circle me-3" width="50" alt="Guest">
+            <img src="https://randomuser.me/api/portraits/women/65.jpg" class="rounded-circle me-3" width="50" alt="Priyanka Sharma - Guest Review">
             <div>
-              <h6 class="mb-0">Priyanka Sharma</h6>
+              <h3 class="h6 mb-0">Priyanka Sharma</h3>
               <small class="text-muted">Regular Guest</small>
             </div>
           </div>
@@ -365,9 +417,9 @@
           </div>
           <p class="mb-4"><i class="fas fa-quote-left me-2" style="color: var(--theme-color1);"></i>Perfect place for business dinners. The service is attentive without being intrusive and the food is consistently excellent.</p>
           <div class="d-flex align-items-center">
-            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle me-3" width="50" alt="Guest">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle me-3" width="50" alt="Rajiv Malhotra - Guest Review">
             <div>
-              <h6 class="mb-0">Rajiv Malhotra</h6>
+              <h3 class="h6 mb-0">Rajiv Malhotra</h3>
               <small class="text-muted">Business Traveler</small>
             </div>
           </div>
@@ -381,9 +433,9 @@
           </div>
           <p class="mb-4"><i class="fas fa-quote-left me-2" style="color: var(--theme-color1);"></i>The Sunday brunch is fantastic! Great variety and quality. The live music at the rooftop bar makes for a perfect evening.</p>
           <div class="d-flex align-items-center">
-            <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle me-3" width="50" alt="Guest">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle me-3" width="50" alt="Ananya Patel - Guest Review">
             <div>
-              <h6 class="mb-0">Ananya Patel</h6>
+              <h3 class="h6 mb-0">Ananya Patel</h3>
               <small class="text-muted">Food Blogger</small>
             </div>
           </div>
@@ -406,8 +458,8 @@
   </div>
   
   <!-- Floating food decoration -->
-  <img src="https://cdn-icons-png.flaticon.com/512/5787/5787068.png" class="position-absolute float-anim" style="width: 80px; top: 20%; left: 10%; animation-delay: 0s;">
-  <img src="https://cdn-icons-png.flaticon.com/512/3194/3194889.png" class="position-absolute float-anim" style="width: 60px; bottom: 30%; right: 15%; animation-delay: 1s;">
+  <img src="https://cdn-icons-png.flaticon.com/512/5787/5787068.png" alt="Floating food decoration" class="position-absolute float-anim" style="width: 80px; top: 20%; left: 10%; animation-delay: 0s;">
+  <img src="https://cdn-icons-png.flaticon.com/512/3194/3194889.png" alt="Floating food decoration" class="position-absolute float-anim" style="width: 60px; bottom: 30%; right: 15%; animation-delay: 1s;">
 </section>
 
 <!-- JavaScript Libraries -->

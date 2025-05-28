@@ -102,7 +102,7 @@
     <div class="footer-bottom">
       <div class="auto-container">
         <div class="inner-container">
-          <div class="copyright-text">© 2025 <span>Hotel Ranbirs</span>. All Rights Reserved.</div>
+          <div class="copyright-text">© 2025 <span>Hotel Ranbirs</span>. All Rights Reserved by <a class="text-white" href="https://yashinfosystem.com/">Yash Infosystem</a></div>
         </div>
       </div>
     </div>

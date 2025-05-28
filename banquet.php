@@ -1,15 +1,59 @@
 <?php include('layouts/header.php'); ?>
 
 <!-- Meta Tags -->
-<meta name="title" content="Banquet Hall in Gomti Nagar – Weddings & Events | Hotel Ranbirs">
-<meta name="description" content="Host your wedding, engagement, or corporate event at our stylish banquet hall in Gomti Nagar, opposite MAX Hospital, Lucknow.">
-<link rel="canonical" href="/banquet-hall-lucknow">
+<meta name="title" content="Best Banquet Hall in Gomti Nagar, Lucknow | Hotel Ranbirs">
+<meta name="description" content="Luxury banquet hall in Gomti Nagar, Lucknow for weddings, corporate events & social gatherings. 300+ capacity, multi-cuisine catering & professional event planning.">
+<meta name="keywords" content="banquet hall lucknow, wedding venue gomti nagar, corporate event space lucknow, best banquet in lucknow, hotel ranbirs banquet">
+<link rel="canonical" href="https://www.hotelranbirs.com/banquet-hall-lucknow">
+
+<!-- Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EventVenue",
+  "name": "Hotel Ranbirs Banquet Hall",
+  "description": "Premium banquet hall in Gomti Nagar, Lucknow for weddings, corporate events and social gatherings",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "CP 125, Viraj Khand",
+    "addressLocality": "Gomti Nagar",
+    "addressRegion": "Uttar Pradesh",
+    "postalCode": "226010",
+    "addressCountry": "India"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "26.8381",
+    "longitude": "81.0019"
+  },
+  "openingHours": "Mo-Su 00:00-23:59",
+  "telephone": "+919876543210",
+  "image": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04",
+  "priceRange": "$$$",
+  "amenityFeature": [
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Capacity",
+      "value": "300 persons"
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Catering",
+      "value": "Multi-cuisine"
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Parking",
+      "value": "Available"
+    }
+  ]
+}
+</script>
 
 <!-- AOS CSS -->
 <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 <style>
-  
     :root {
       --theme-color1: #AE7D54;       /* Primary brown */
       --theme-color1-rgb: 174, 125, 84;
@@ -114,19 +158,20 @@
   }
 }
 </style>
+
 <!-- Page Title Section with Parallax -->
-<section class="page-title" style="background-image: url('https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')">
+<section class="page-title" style="background-image: url('images/banner/banquetbanner.jpg')">
   <div class="auto-container text-center" data-aos="fade-down" data-aos-delay="100">
-    <h1 class="title" style="color: var(--theme-color1);">Host Unforgettable Events at Our Banquet Hall</h1>
+    <h1 class="title" style="color: var(--theme-color1);">Premier Banquet Hall in Gomti Nagar, Lucknow</h1>
     <ul class="page-breadcrumb" data-aos="fade-up" data-aos-delay="200">
       <li><a href="index.html" style="color: var(--theme-color1);">Home</a></li>
-      <li class="text-white">Banquet</li>
+      <li class="text-white">Banquet Hall</li>
     </ul>
   </div>
   
   <!-- Floating Decorative Elements -->
-  <img src="https://cdn-icons-png.flaticon.com/512/3048/3048127.png" class="position-absolute float-anim" style="width: 80px; top: 20%; left: 5%; animation-delay: 0s;">
-  <img src="https://cdn-icons-png.flaticon.com/512/3048/3048127.png" class="position-absolute float-anim" style="width: 60px; top: 30%; right: 8%; animation-delay: 1s;">
+  <img src="https://cdn-icons-png.flaticon.com/512/3048/3048127.png" alt="Wedding decoration icon" class="position-absolute float-anim" style="width: 80px; top: 20%; left: 5%; animation-delay: 0s;">
+  <img src="https://cdn-icons-png.flaticon.com/512/3048/3048127.png" alt="Event planning icon" class="position-absolute float-anim" style="width: 60px; top: 30%; right: 8%; animation-delay: 1s;">
 </section>
 
 <!-- Banquet Intro Section -->
@@ -135,8 +180,8 @@
     <div class="row align-items-center">
       <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-delay="200">
         <div class="position-relative">
-          <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" 
-               alt="Best Banquet in Gomti Nagar" 
+          <img src="images\banner\banquetredfull.jpg" 
+               alt="Luxury banquet hall interior at Hotel Ranbirs, Gomti Nagar" 
                class="img-fluid rounded shadow-lg border-glow">
           <div class="position-absolute bottom-0 start-0 p-3 rounded-end" style="background-color: var(--theme-color1); color: white;" data-aos="fade-up" data-aos-delay="400">
             <h5 class="mb-0">Since 2010</h5>
@@ -147,23 +192,23 @@
       <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
         <div class="pe-lg-4">
           <span class="badge mb-3 pulse-anim" style="background-color: var(--theme-color1); color: white;">WEDDING & EVENTS</span>
-          <h2 class="mb-3" style="font-family: var(--title-font);">Make Every Occasion Grand at Ranbirs</h2>
-          <p class="mb-4" data-aos="fade-up" data-aos-delay="400">Located in the heart of Lucknow, Hotel Ranbirs is renowned as the <strong>Best Banquet in Gomti Nagar</strong>. Whether it's a wedding, reception, engagement, or corporate event, our luxurious spaces and experienced planners turn every moment into a memory.</p>
+          <h2 class="mb-3" style="font-family: var(--title-font);">Luxury Banquet Hall in Lucknow for All Occasions</h2>
+          <p class="mb-4" data-aos="fade-up" data-aos-delay="400">Located opposite MAX Hospital in Gomti Nagar, Hotel Ranbirs offers the <strong>best banquet facilities in Lucknow</strong>. Our elegant venue is perfect for weddings (capacity 300+), corporate events, birthday parties, and social gatherings, with complete event planning services.</p>
           
           <!-- Event Types Carousel -->
           <div class="owl-carousel owl-theme" data-aos="zoom-in" data-aos-delay="500">
             <div class="hover-card p-3 rounded bg-white shadow-sm text-center mx-2">
-              <img src="https://cdn-icons-png.flaticon.com/512/3048/3048127.png" alt="Wedding" class="img-fluid mb-2" style="height: 60px;">
+              <img src="https://cdn-icons-png.flaticon.com/512/3048/3048127.png" alt="Wedding events icon" class="img-fluid mb-2" style="height: 60px;">
               <h6 class="mb-1">Weddings</h6>
               <p class="small mb-0">Dream celebrations</p>
             </div>
             <div class="hover-card p-3 rounded bg-white shadow-sm text-center mx-2">
-              <img src="https://cdn-icons-png.flaticon.com/512/3048/3048127.png" alt="Corporate" class="img-fluid mb-2" style="height: 60px;">
+              <img src="https://cdn-icons-png.flaticon.com/512/3048/3048127.png" alt="Corporate events icon" class="img-fluid mb-2" style="height: 60px;">
               <h6 class="mb-1">Corporate Events</h6>
               <p class="small mb-0">Professional setups</p>
             </div>
             <div class="hover-card p-3 rounded bg-white shadow-sm text-center mx-2">
-              <img src="https://cdn-icons-png.flaticon.com/512/3048/3048127.png" alt="Social" class="img-fluid mb-2" style="height: 60px;">
+              <img src="https://cdn-icons-png.flaticon.com/512/3048/3048127.png" alt="Social events icon" class="img-fluid mb-2" style="height: 60px;">
               <h6 class="mb-1">Social Gatherings</h6>
               <p class="small mb-0">Elegant occasions</p>
             </div>
@@ -179,8 +224,8 @@
   <div class="auto-container">
     <div class="sec-title text-center mb-5" data-aos="zoom-in">
       <span class="sub-title" style="color: var(--theme-color1);">WHY CHOOSE US</span>
-      <h2 style="font-family: var(--title-font);">Why Choose Hotel Ranbirs for Your Special Day?</h2>
-      <p class="text-muted">We offer luxury, elegance, and perfection under one roof.</p>
+      <h2 style="font-family: var(--title-font);">Top-Rated Banquet Hall in Gomti Nagar</h2>
+      <p class="text-muted">Professional event management with premium amenities</p>
     </div>
     
     <div class="row g-4">
@@ -190,8 +235,8 @@
                style="width: 80px; height: 80px; background-color: var(--theme-color1); color: white; font-size: 30px;">
             <i class="fas fa-utensils"></i>
           </div>
-          <h5 class="text-center">Multi-Cuisine Catering</h5>
-          <p class="mb-0 text-center">Enjoy delicious vegetarian and non-vegetarian delicacies prepared by expert chefs using the finest ingredients and traditional recipes.</p>
+          <h3 class="h5 text-center">Multi-Cuisine Catering</h3>
+          <p class="mb-0 text-center">Expert chefs prepare delicious vegetarian and non-vegetarian dishes using premium ingredients and traditional Awadhi recipes.</p>
         </div>
       </div>
       
@@ -201,8 +246,8 @@
                style="width: 80px; height: 80px; background-color: var(--theme-color1); color: white; font-size: 30px;">
             <i class="fas fa-glass-cheers"></i>
           </div>
-          <h5 class="text-center">Premium Beverages & Bar</h5>
-          <p class="mb-0 text-center">We offer a wide selection of alcoholic and non-alcoholic beverages including premium wines, mocktails, and custom bar setups.</p>
+          <h3 class="h5 text-center">Premium Bar Services</h3>
+          <p class="mb-0 text-center">Custom bar setups with premium spirits, wines, and creative mocktails for all types of celebrations and corporate events.</p>
         </div>
       </div>
       
@@ -212,8 +257,8 @@
                style="width: 80px; height: 80px; background-color: var(--theme-color1); color: white; font-size: 30px;">
             <i class="fas fa-gem"></i>
           </div>
-          <h5 class="text-center">Theme Décor & Planning</h5>
-          <p class="mb-0 text-center">Our professional wedding planners specialize in personalized theme décor, floral arrangements, and event styling to match your dream vision.</p>
+          <h3 class="h5 text-center">Custom Event Planning</h3>
+          <p class="mb-0 text-center">From floral decorations to theme execution, our wedding planners handle every detail to match your vision perfectly.</p>
         </div>
       </div>
     </div>
@@ -225,35 +270,35 @@
   <div class="auto-container">
     <div class="row align-items-center">
       <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
-        <h2 style="font-family: var(--title-font);">Elegant Banquet Facilities</h2>
-        <p class="mb-4">Our beautifully designed banquet hall is equipped with modern amenities, mood lighting, AV systems, and spacious seating—ideal for any occasion from weddings to business meets.</p>
+        <h2 style="font-family: var(--title-font);">Banquet Hall Features & Amenities</h2>
+        <p class="mb-4">Our 5,000 sq.ft. air-conditioned banquet hall in Gomti Nagar features modern decor, advanced AV systems, and flexible layouts for 50-300 guests.</p>
         
         <div class="row">
           <div class="col-md-6">
             <ul class="list-unstyled">
-              <li class="mb-3"><i class="fas fa-check-circle me-2" style="color: var(--theme-color1);"></i> Spacious indoor hall</li>
-              <li class="mb-3"><i class="fas fa-check-circle me-2" style="color: var(--theme-color1);"></i> Custom seating arrangements</li>
+              <li class="mb-3"><i class="fas fa-check-circle me-2" style="color: var(--theme-color1);"></i> 300+ seating capacity</li>
+              <li class="mb-3"><i class="fas fa-check-circle me-2" style="color: var(--theme-color1);"></i> Customizable layouts</li>
               <li class="mb-3"><i class="fas fa-check-circle me-2" style="color: var(--theme-color1);"></i> Professional lighting</li>
             </ul>
           </div>
           <div class="col-md-6">
             <ul class="list-unstyled">
-              <li class="mb-3"><i class="fas fa-check-circle me-2" style="color: var(--theme-color1);"></i> On-site parking</li>
+              <li class="mb-3"><i class="fas fa-check-circle me-2" style="color: var(--theme-color1);"></i> Secure parking</li>
               <li class="mb-3"><i class="fas fa-check-circle me-2" style="color: var(--theme-color1);"></i> Power backup</li>
-              <li class="mb-3"><i class="fas fa-check-circle me-2" style="color: var(--theme-color1);"></i> Wi-Fi enabled</li>
+              <li class="mb-3"><i class="fas fa-check-circle me-2" style="color: var(--theme-color1);"></i> High-speed Wi-Fi</li>
             </ul>
           </div>
         </div>
         
         <div class="mt-4" data-aos="fade-up" data-aos-delay="300">
           <a href="#" class="btn me-2" style="background-color: var(--theme-color1); color: white;">View Floor Plan</a>
-          <a href="#" class="btn btn-outline-dark">Capacity Details</a>
+          <a href="#" class="btn btn-outline-dark">Pricing Details</a>
         </div>
       </div>
       <div class="col-lg-6" data-aos="fade-left">
         <div class="position-relative">
-          <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2025&q=80" 
-               alt="Banquet Facilities" 
+          <img src="images\banner\Adobe Express - file (10).jpg" 
+               alt="Spacious banquet hall with elegant decor at Hotel Ranbirs" 
                class="img-fluid rounded shadow-lg">
           <div class="position-absolute bottom-0 end-0 p-3 rounded-start" style="background-color: var(--theme-color1); color: white;">
             <h5 class="mb-0">Up to 300 Guests</h5>
@@ -270,7 +315,7 @@
   <div class="auto-container">
     <div class="sec-title text-center mb-5" data-aos="fade-up">
       <span class="sub-title" style="color: var(--theme-color1);">CLIENT REVIEWS</span>
-      <h2 style="font-family: var(--title-font);">What Our Clients Say</h2>
+      <h2 style="font-family: var(--title-font);">What Our Clients Say About Us</h2>
       <p class="text-muted">Hear from couples and organizations who celebrated with us</p>
     </div>
     
@@ -282,7 +327,7 @@
           </div>
           <p class="mb-4"><i class="fas fa-quote-left me-2" style="color: var(--theme-color1);"></i>The Ranbirs team made our wedding day absolutely perfect. Their attention to detail and professional service exceeded our expectations.</p>
           <div class="d-flex align-items-center">
-            <img src="https://randomuser.me/api/portraits/women/65.jpg" class="rounded-circle me-3" width="50" alt="Client">
+            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Priyanka wedding client testimonial" class="rounded-circle me-3" width="50">
             <div>
               <h6 class="mb-0">Priyanka & Raj</h6>
               <small class="text-muted">Wedding Couple</small>
@@ -298,7 +343,7 @@
           </div>
           <p class="mb-4"><i class="fas fa-quote-left me-2" style="color: var(--theme-color1);"></i>Our corporate gala was executed flawlessly. The banquet space was transformed exactly as we envisioned.</p>
           <div class="d-flex align-items-center">
-            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle me-3" width="50" alt="Client">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Amit corporate client testimonial" class="rounded-circle me-3" width="50">
             <div>
               <h6 class="mb-0">Amit Sharma</h6>
               <small class="text-muted">Corporate Client</small>
@@ -314,7 +359,7 @@
           </div>
           <p class="mb-4"><i class="fas fa-quote-left me-2" style="color: var(--theme-color1);"></i>From the initial planning to the final execution, every detail was handled professionally. The food was exceptional!</p>
           <div class="d-flex align-items-center">
-            <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle me-3" width="50" alt="Client">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Ananya birthday client testimonial" class="rounded-circle me-3" width="50">
             <div>
               <h6 class="mb-0">Ananya Patel</h6>
               <small class="text-muted">Birthday Celebration</small>
@@ -330,17 +375,17 @@
 <section class="py-4 position-relative overflow-hidden" style="background: url('https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') no-repeat center center/cover;">
   <div class="overlay" style="background: rgba(var(--theme-color-black-rgb), 0.7); position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
   <div class="auto-container position-relative text-center" style="z-index: 1;" data-aos="zoom-in">
-    <h2 class="text-white mb-4" style="font-family: var(--title-font);">Ready to Plan Your Dream Event?</h2>
-    <p class="text-white mb-5">Contact us today to book your date and customize your event package with our professional planners.</p>
+    <h2 class="text-white mb-4" style="font-family: var(--title-font);">Book Your Event at Lucknow's Premier Banquet Hall</h2>
+    <p class="text-white mb-5">Contact our event specialists today to check availability and customize your perfect celebration package.</p>
     <div class="d-flex justify-content-center gap-3">
-      <a href="contact.html" class="btn btn-lg pulse-anim" style="background-color: var(--theme-color1); color: white;">Book a Tour</a>
-      <a href="tel:+919876543210" class="btn btn-lg btn-outline-light">Call Now</a>
+      <a href="contact.html" class="btn btn-lg pulse-anim" style="background-color: var(--theme-color1); color: white;">Schedule Visit</a>
+      <a href="tel:+919876543210" class="btn btn-lg btn-outline-light">Call: +91 9876543210</a>
     </div>
   </div>
   
   <!-- Floating Decorative Elements -->
-  <img src="https://cdn-icons-png.flaticon.com/512/3048/3048127.png" class="position-absolute float-anim" style="width: 80px; top: 20%; left: 10%; animation-delay: 0s;">
-  <img src="https://cdn-icons-png.flaticon.com/512/3048/3048127.png" class="position-absolute float-anim" style="width: 60px; bottom: 30%; right: 15%; animation-delay: 1s;">
+  <img src="https://cdn-icons-png.flaticon.com/512/3048/3048127.png" alt="Event decoration icon" class="position-absolute float-anim" style="width: 80px; top: 20%; left: 10%; animation-delay: 0s;">
+  <img src="https://cdn-icons-png.flaticon.com/512/3048/3048127.png" alt="Celebration icon" class="position-absolute float-anim" style="width: 60px; bottom: 30%; right: 15%; animation-delay: 1s;">
 </section>
 
 <!-- JavaScript Libraries -->

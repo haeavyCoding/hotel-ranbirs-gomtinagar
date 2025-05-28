@@ -65,7 +65,7 @@ License: copyright commercial
   --gradient-1: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.64) 42%, rgba(0, 0, 0, 0.32) 100%);
   --gradient-2: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
   --gradient-3: linear-gradient(275.66deg, rgba(0, 0, 0, 0.95) 5.7%, #1A1A1A 45.93%);
-  --text-color: #666666;
+  --text-color: rgb(60 56 56);
   --text-color9: #999999;
   --headings-color: #121212;
   --review-color: #ffc737;
@@ -158,8 +158,8 @@ body {
 }
 
 p, .text {
-  color: var(--text-color);
-  font-size: var(--body-font-size);
+  color:rgb(90, 88, 88);
+  font-size: ;
   font-family: var(--text-font);
   font-weight: var(--body-font-weight);
   line-height: var(--body-line-height);
@@ -249,6 +249,7 @@ table p {
 
 p {
   margin-bottom: 20px;
+  color: rgb(105, 103, 103) !important;
 }
 
 p a:not(.button):not(.btn):hover, p a:not(.button):not(.btn):focus {
