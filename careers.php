@@ -237,12 +237,46 @@
       font-size: 1.5rem;
     }
   }
+   h1 {
+      font-size: 2.5rem !important;
+      font-family: Arial, Helvetica, sans-serif !important;
+      font-weight: 600;
+      color: #AE7D54;
+    }
+    h2 {
+   font-size: 1.7rem !important;
+   line-height: 30px !important;
+   font-family: Arial, Helvetica, sans-serif !important;
+   font-weight: 600 !important;
+   color: #AE7D54;
+    }
+    h3 {
+font-size: 1.5rem !important;
+font-family: Arial, Helvetica, sans-serif !important;
+font-weight: 600 !important;
+color: #AE7D54;
+ }
+    /* For very small devices (up to 480px) */
+    @media (max-width: 991px) {
+      .btn-lg {
+        font-size: 0.85rem;
+        padding: 0.6rem 1.2rem;
+      }
+      .feature-card .icon-box {
+        font-size: 1.2rem;
+      }
+       h1 {
+   font-size: 2rem !important;
+   font-family: Arial, Helvetica, sans-serif !important;
+   font-weight: 600;
+ }
+    }
 </style>
 
 <!-- Page Title Section -->
 <section class="page-title" style="background-image: url('images/background/carreer.jpg');">
   <div class="auto-container text-center text-white py-5" data-aos="fade-down">
-    <h1 class="title">Join Our Team at Ranbirs</h1>
+    <h1 class="title" style="color: #AE7D54;">Join Our Team at Ranbirs</h1>
     <ul class="page-breadcrumb">
       <li><a href="index.html" class="text-white">Home</a></li>
       <li>Careers</li>

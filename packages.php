@@ -250,7 +250,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(var(--theme-color1-rgb), 0.8);
+    background: rgba(0, 0, 0, 0.7)
   }
   
   .cta-content {
@@ -283,20 +283,58 @@
   
   @media (max-width: 767px) {
     .page-title h1 {
-      font-size: 1.8rem;
+      font-size: 2rem;
     }
     
     .price {
       font-size: 2rem;
     }
   }
+   h1 {
+      font-size: 2.5rem !important;
+      font-family: Arial, Helvetica, sans-serif !important;
+      font-weight: 600;
+      color: #AE7D54;
+    }
+    h2 {
+   font-size: 1.7rem !important;
+   line-height: 30px !important;
+   font-family: Arial, Helvetica, sans-serif !important;
+   font-weight: 600 !important;
+   color: #AE7D54;
+    }
+    h3 {
+font-size: 1.5rem !important;
+font-family: Arial, Helvetica, sans-serif !important;
+font-weight: 600 !important;
+color: #AE7D54;
+ }
+    /* For very small devices (up to 480px) */
+    @media (max-width: 991px) {
+      .btn-lg {
+        font-size: 0.85rem;
+        padding: 0.6rem 1.2rem;
+      }
+      .feature-card .icon-box {
+        font-size: 1.2rem;
+      }
+       h1 {
+   font-size: 2rem !important;
+   font-family: Arial, Helvetica, sans-serif !important;
+   font-weight: 600;
+   
+ }
+ h2{
+  text-align: center !important;
+ }
+    }
 </style>
 
 <!-- Page Title Section -->
 <section class="page-title">
   <div class="auto-container text-center" data-aos="fade-down">
-    <h1 class="title">Premium Meeting Rooms in Gomti Nagar</h1>
-    <p class="lead mb-4" style="max-width: 800px; margin: 0 auto;">Professional meeting spaces designed for productivity and success</p>
+    <h1 class="title" style="color: #AE7D54">Premium Meeting Rooms in Gomti Nagar</h1>
+    <p class="lead mb-4" style="max-width: 800px; margin: 0 auto; color: white !important;">Professional meeting spaces designed for productivity and success</p>
     <ul class="page-breadcrumb">
       <li><a href="index.html">Home</a></li>
       <li>Meeting Rooms</li>
@@ -511,8 +549,8 @@
         <div class="gallery-item">
           <img src="images\banner\room1fullsize.JPG" alt="Boardroom Setup" class="gallery-img">
           <div class="gallery-overlay">
-            <h5>Executive Boardroom</h5>
-            <p>U-shaped setup for 18 persons</p>
+            <h5 style="color:white;">Executive Boardroom</h5>
+            <p style="color:white; !important">U-shaped setup for 18 persons</p>
           </div>
         </div>
       </div>
@@ -520,8 +558,8 @@
         <div class="gallery-item">
           <img src="images\banner\room1fullsize.JPG" alt="Conference Setup" class="gallery-img">
           <div class="gallery-overlay">
-            <h5>Conference Style</h5>
-            <p>Theater setup for 30 persons</p>
+            <h5 style="color:white;">Conference Style</h5>
+            <p style="color:white;">Theater setup for 30 persons</p>
           </div>
         </div>
       </div>
@@ -529,8 +567,8 @@
         <div class="gallery-item">
           <img src="images\banner\room1fullsize.JPG" alt="Training Room" class="gallery-img">
           <div class="gallery-overlay">
-            <h5>Training Room</h5>
-            <p>Classroom setup for 25 persons</p>
+            <h5 style="color:white;">Training Room</h5>
+            <p style="color:white;">Classroom setup for 25 persons</p>
           </div>
         </div>
       </div>
@@ -557,8 +595,8 @@
   </div>
   
   <!-- Floating decoration elements -->
-  <img src="https://cdn-icons-png.flaticon.com/512/5787/5787068.png" class="position-absolute float-anim" style="width: 80px; top: 20%; left: 10%; animation-delay: 0s;">
-  <img src="https://cdn-icons-png.flaticon.com/512/3194/3194889.png" class="position-absolute float-anim" style="width: 60px; bottom: 30%; right: 15%; animation-delay: 1s;">
+  <img src="https://cdn-icons-png.flaticon.com/512/5787/5787068.png" class="position-absolute float-anim" style="width: 2rem; top: 20%; left: 10%; animation-delay: 0s;">
+  <img src="https://cdn-icons-png.flaticon.com/512/3194/3194889.png" class="position-absolute float-anim" style="width: 2rem; bottom: 30%; right: 15%; animation-delay: 1s;">
 </section>
 
 <!-- AOS JS -->

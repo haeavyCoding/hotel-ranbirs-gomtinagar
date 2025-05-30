@@ -61,11 +61,56 @@
       --theme-color3: #faf7f2;       /* Off-white */
       --theme-color-light: #ffffff;  /* Pure white */
       --theme-color-dark: #121212;   /* Near black */
-      --text-color:rgb(196, 196, 196);        /* Medium gray */
+      --text-color: #555555;        /* Medium gray */
       --headings-color: #121212;    /* Dark headings */
       --accent-color: #b34700;      /* Warning orange */
       --secondary-accent: #ff8800;  /* Bright orange */
     }
+  
+  /* Typography */
+  body {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+   h1 {
+      font-size: 2.5rem !important;
+      font-family: Arial, Helvetica, sans-serif !important;
+      font-weight: 600;
+      color: #AE7D54;
+    }
+    h2 {
+   font-size: 1.7rem !important;
+   line-height: 30px !important;
+   font-family: Arial, Helvetica, sans-serif !important;
+   font-weight: 600 !important;
+   color: #AE7D54;
+    }
+    h3 {
+font-size: 1.5rem !important;
+font-family: Arial, Helvetica, sans-serif !important;
+font-weight: 600 !important;
+color: #AE7D54;
+ }
+    /* For very small devices (up to 480px) */
+    @media (max-width: 991px) {
+      .btn-lg {
+        font-size: 0.85rem;
+        padding: 0.6rem 1.2rem;
+      }
+      .feature-card .icon-box {
+        font-size: 1.2rem;
+      }
+       h1 {
+   font-size: 2.5rem !important;
+   font-family: Arial, Helvetica, sans-serif !important;
+   font-weight: 600;
+ }
+    }
+  
+  .lead-text {
+    font-size: 1.1rem;
+  }
+  
   /* Animation Classes */
   .float-anim {
     animation: float 6s ease-in-out infinite;
@@ -99,7 +144,9 @@
     background-position: center;
     position: relative;
     z-index: 1;
+    padding: 100px 0;
   }
+  
   .page-title::before {
     content: '';
     position: absolute;
@@ -107,7 +154,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background: var(--gradient-1);
+    background: rgba(0,0,0,0.4);
     z-index: -1;
   }
   
@@ -115,104 +162,134 @@
     transition: all 0.3s ease;
     border: 1px solid rgba(var(--theme-color1-rgb), 0.1);
   }
+  
   .dish-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
   }
   
   .menu-highlight {
     position: relative;
     overflow: hidden;
   }
+  
   .menu-highlight::after {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 3px;
+    height: 2px;
     background: var(--theme-color1);
     transform: scaleX(0);
     transition: transform 0.3s ease;
   }
+  
   .menu-highlight:hover::after {
     transform: scaleX(1);
   }
-  h1, h2, h3 {
-    font-size: 2.5rem;
-    font-family: Arial, Helvetica, sans-serif !important;
-    font-weight: 600;
+  
+  /* Responsive Adjustments */
+  @media (max-width: 991px) {
+    h1 {
+      font-size: 2rem !important;
+    }
+    
+    h2 {
+      font-size: 1.4rem !important;
+    }
+    
+    h3 {
+      font-size: 1.2rem !important;
+    }
+    
+    .page-title {
+      padding: 70px 0;
+    }
+    
+    .btn-lg {
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+    }
+    
   }
-/* For very small devices (up to 480px) */
-@media (max-width: 991px) {
-  h1, h2, h3 {
-    font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif !important;
+  
+  @media (max-width: 767px) {
+    body {
+      font-size: 0.95rem;
+    }
+    
+    h1 {
+      font-size: 2rem !important;
+    }
+    
+    h2 {
+      font-size: 1.5rem !important;
+    }
   }
-  .btn-lg {
-    font-size: 0.85rem;
-    padding: 0.6rem 1.2rem;
-  }
-  .feature-card .icon-box {
-    font-size: 1.2rem;
-  }
-}
 </style>
 
 <!-- Page Title Section with Parallax -->
 <section class="page-title" style="background-image: url('images/banner/banquetbanner.jpg')">
   <div class="auto-container text-center" data-aos="fade-down" data-aos-delay="100">
-    <h1 class="title" style="color: var(--theme-color1);">Premier Banquet Hall in Gomti Nagar, Lucknow</h1>
+    <h1 class="title text-white mb-3" style="color: var(--theme-color1) !important">Premier Banquet Hall in Gomti Nagar</h1>
+    <p class="lead-text text-white mb-4">Elegant venue for weddings, corporate events & social gatherings</p>
     <ul class="page-breadcrumb" data-aos="fade-up" data-aos-delay="200">
-      <li><a href="index.html" style="color: var(--theme-color1);">Home</a></li>
+      <li><a href="index.php" class="text-white">Home</a></li>
       <li class="text-white">Banquet Hall</li>
     </ul>
   </div>
-  
-  <!-- Floating Decorative Elements -->
-  <img src="https://cdn-icons-png.flaticon.com/512/3048/3048127.png" alt="Wedding decoration icon" class="position-absolute float-anim" style="width: 80px; top: 20%; left: 5%; animation-delay: 0s;">
-  <img src="https://cdn-icons-png.flaticon.com/512/3048/3048127.png" alt="Event planning icon" class="position-absolute float-anim" style="width: 60px; top: 30%; right: 8%; animation-delay: 1s;">
 </section>
 
 <!-- Banquet Intro Section -->
-<section class="pt-120 pb-80" style="background-color: var(--theme-color-white);">
+<section class="py-5">
   <div class="auto-container">
     <div class="row align-items-center">
       <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-delay="200">
-        <div class="position-relative">
-          <img src="images\banner\banquetredfull.jpg" 
-               alt="Luxury banquet hall interior at Hotel Ranbirs, Gomti Nagar" 
-               class="img-fluid rounded shadow-lg border-glow">
-          <div class="position-absolute bottom-0 start-0 p-3 rounded-end" style="background-color: var(--theme-color1); color: white;" data-aos="fade-up" data-aos-delay="400">
+        <div class="position-relative rounded overflow-hidden">
+          <img src="images/banner/banquetredfull.jpg" 
+               alt="Luxury banquet hall interior at Hotel Ranbirs" 
+               class="img-fluid w-100">
+          <div class="position-absolute bottom-0 start-0 p-3 rounded-end" style="background-color: var(--theme-color1); color: white;">
             <h5 class="mb-0">Since 2010</h5>
             <p class="mb-0 small">Creating memorable events</p>
           </div>
         </div>
       </div>
       <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
-        <div class="pe-lg-4">
-          <span class="badge mb-3 pulse-anim" style="background-color: var(--theme-color1); color: white;">WEDDING & EVENTS</span>
-          <h2 class="mb-3" style="font-family: var(--title-font);">Luxury Banquet Hall in Lucknow for All Occasions</h2>
-          <p class="mb-4" data-aos="fade-up" data-aos-delay="400">Located opposite MAX Hospital in Gomti Nagar, Hotel Ranbirs offers the <strong>best banquet facilities in Lucknow</strong>. Our elegant venue is perfect for weddings (capacity 300+), corporate events, birthday parties, and social gatherings, with complete event planning services.</p>
+        <div class="ps-lg-4">
+          <span class="badge mb-3" style="background-color: var(--theme-color1); color: white;">WEDDING & EVENTS</span>
+          <h2 class="mb-3">Luxury Banquet Hall in Heart of Lucknow</h2>
+          <p class="mb-4">Our elegant venue opposite MAX Hospital in Gomti Nagar is perfect for:</p>
           
-          <!-- Event Types Carousel -->
-          <div class="owl-carousel owl-theme" data-aos="zoom-in" data-aos-delay="500">
-            <div class="hover-card p-3 rounded bg-white shadow-sm text-center mx-2">
-              <img src="https://cdn-icons-png.flaticon.com/512/3048/3048127.png" alt="Wedding events icon" class="img-fluid mb-2" style="height: 60px;">
-              <h6 class="mb-1">Weddings</h6>
-              <p class="small mb-0">Dream celebrations</p>
+          <div class="row g-3 mb-4">
+            <div class="col-md-4">
+              <div class="bg-light p-3 text-center rounded">
+                <i class="fas fa-glass-cheers mb-2" style="color: var(--theme-color1); font-size: 1.5rem;"></i>
+                <h6 class="mb-0">Weddings</h6>
+              </div>
             </div>
-            <div class="hover-card p-3 rounded bg-white shadow-sm text-center mx-2">
-              <img src="https://cdn-icons-png.flaticon.com/512/3048/3048127.png" alt="Corporate events icon" class="img-fluid mb-2" style="height: 60px;">
-              <h6 class="mb-1">Corporate Events</h6>
-              <p class="small mb-0">Professional setups</p>
+            <div class="col-md-4">
+              <div class="bg-light p-3 text-center rounded">
+                <i class="fas fa-briefcase mb-2" style="color: var(--theme-color1); font-size: 1.5rem;"></i>
+                <h6 class="mb-0">Corporate Events</h6>
+              </div>
             </div>
-            <div class="hover-card p-3 rounded bg-white shadow-sm text-center mx-2">
-              <img src="https://cdn-icons-png.flaticon.com/512/3048/3048127.png" alt="Social events icon" class="img-fluid mb-2" style="height: 60px;">
-              <h6 class="mb-1">Social Gatherings</h6>
-              <p class="small mb-0">Elegant occasions</p>
+            <div class="col-md-4">
+              <div class="bg-light p-3 text-center rounded">
+                <i class="fas fa-birthday-cake mb-2" style="color: var(--theme-color1); font-size: 1.5rem;"></i>
+                <h6 class="mb-0">Social Events</h6>
+              </div>
             </div>
           </div>
+          
+          <ul class="list-unstyled mb-4">
+            <li class="mb-2"><i class="fas fa-check-circle me-2" style="color: var(--theme-color1);"></i> 300+ seating capacity</li>
+            <li class="mb-2"><i class="fas fa-check-circle me-2" style="color: var(--theme-color1);"></i> Multi-cuisine catering</li>
+            <li class="mb-2"><i class="fas fa-check-circle me-2" style="color: var(--theme-color1);"></i> Professional event planning</li>
+          </ul>
+          
+          <a href="#contact" class="btn btn-primary">Enquire Now</a>
         </div>
       </div>
     </div>
@@ -220,114 +297,90 @@
 </section>
 
 <!-- Highlights Section -->
-<section class="pt-80 pb-80" style="background-color: var(--theme-color3);">
+<section class="py-5 bg-light">
   <div class="auto-container">
-    <div class="sec-title text-center mb-5" data-aos="zoom-in">
-      <span class="sub-title" style="color: var(--theme-color1);">WHY CHOOSE US</span>
-      <h2 style="font-family: var(--title-font);">Top-Rated Banquet Hall in Gomti Nagar</h2>
-      <p class="text-muted">Professional event management with premium amenities</p>
+    <div class="text-center mb-5">
+      <span class="d-inline-block px-3 py-1 mb-3 rounded" style="background-color: var(--theme-color1); color: white;">WHY CHOOSE US</span>
+      <h2 class="mb-3">Premium Banquet Facilities</h2>
+      <p class="text-muted mx-auto" style="max-width: 700px;">Professional event management with complete amenities for memorable celebrations</p>
     </div>
     
     <div class="row g-4">
-      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="hover-card bg-white p-4 rounded shadow-sm h-100">
-          <div class="icon-box rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" 
-               style="width: 80px; height: 80px; background-color: var(--theme-color1); color: white; font-size: 30px;">
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <div class="h-100 p-4 bg-white rounded shadow-sm">
+          <div class="icon-box rounded-circle mb-3 d-flex align-items-center justify-content-center" 
+               style="width: 60px; height: 60px; background-color: var(--theme-color1); color: white; font-size: 1.5rem;">
             <i class="fas fa-utensils"></i>
           </div>
-          <h3 class="h5 text-center">Multi-Cuisine Catering</h3>
-          <p class="mb-0 text-center">Expert chefs prepare delicious vegetarian and non-vegetarian dishes using premium ingredients and traditional Awadhi recipes.</p>
+          <h3 class="h5 mb-3">Gourmet Catering</h3>
+          <p class="mb-0">Expert chefs prepare delicious vegetarian and non-vegetarian dishes using premium ingredients and traditional recipes.</p>
+        </div>
+      </div>
+      
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="h-100 p-4 bg-white rounded shadow-sm">
+          <div class="icon-box rounded-circle mb-3 d-flex align-items-center justify-content-center" 
+               style="width: 60px; height: 60px; background-color: var(--theme-color1); color: white; font-size: 1.5rem;">
+            <i class="fas fa-wifi"></i>
+          </div>
+          <h3 class="h5 mb-3">Modern Amenities</h3>
+          <p class="mb-0">High-speed WiFi, advanced AV systems, professional lighting and flexible layouts for all event types.</p>
         </div>
       </div>
       
       <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="hover-card bg-white p-4 rounded shadow-sm h-100">
-          <div class="icon-box rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center pulse-anim" 
-               style="width: 80px; height: 80px; background-color: var(--theme-color1); color: white; font-size: 30px;">
-            <i class="fas fa-glass-cheers"></i>
-          </div>
-          <h3 class="h5 text-center">Premium Bar Services</h3>
-          <p class="mb-0 text-center">Custom bar setups with premium spirits, wines, and creative mocktails for all types of celebrations and corporate events.</p>
-        </div>
-      </div>
-      
-      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="hover-card bg-white p-4 rounded shadow-sm h-100">
-          <div class="icon-box rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" 
-               style="width: 80px; height: 80px; background-color: var(--theme-color1); color: white; font-size: 30px;">
+        <div class="h-100 p-4 bg-white rounded shadow-sm">
+          <div class="icon-box rounded-circle mb-3 d-flex align-items-center justify-content-center" 
+               style="width: 60px; height: 60px; background-color: var(--theme-color1); color: white; font-size: 1.5rem;">
             <i class="fas fa-gem"></i>
           </div>
-          <h3 class="h5 text-center">Custom Event Planning</h3>
-          <p class="mb-0 text-center">From floral decorations to theme execution, our wedding planners handle every detail to match your vision perfectly.</p>
+          <h3 class="h5 mb-3">Custom Planning</h3>
+          <p class="mb-0">From floral decorations to theme execution, our planners handle every detail to match your vision perfectly.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Facilities Section -->
-<section class="pt-80 pb-80" style="background-color: var(--theme-color-white);">
+<!-- Gallery Section -->
+<section class="py-5">
   <div class="auto-container">
-    <div class="row align-items-center">
-      <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
-        <h2 style="font-family: var(--title-font);">Banquet Hall Features & Amenities</h2>
-        <p class="mb-4">Our 5,000 sq.ft. air-conditioned banquet hall in Gomti Nagar features modern decor, advanced AV systems, and flexible layouts for 50-300 guests.</p>
-        
-        <div class="row">
-          <div class="col-md-6">
-            <ul class="list-unstyled">
-              <li class="mb-3"><i class="fas fa-check-circle me-2" style="color: var(--theme-color1);"></i> 300+ seating capacity</li>
-              <li class="mb-3"><i class="fas fa-check-circle me-2" style="color: var(--theme-color1);"></i> Customizable layouts</li>
-              <li class="mb-3"><i class="fas fa-check-circle me-2" style="color: var(--theme-color1);"></i> Professional lighting</li>
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <ul class="list-unstyled">
-              <li class="mb-3"><i class="fas fa-check-circle me-2" style="color: var(--theme-color1);"></i> Secure parking</li>
-              <li class="mb-3"><i class="fas fa-check-circle me-2" style="color: var(--theme-color1);"></i> Power backup</li>
-              <li class="mb-3"><i class="fas fa-check-circle me-2" style="color: var(--theme-color1);"></i> High-speed Wi-Fi</li>
-            </ul>
-          </div>
-        </div>
-        
-        <div class="mt-4" data-aos="fade-up" data-aos-delay="300">
-          <a href="#" class="btn me-2" style="background-color: var(--theme-color1); color: white;">View Floor Plan</a>
-          <a href="#" class="btn btn-outline-dark">Pricing Details</a>
-        </div>
+    <div class="text-center mb-5">
+      <span class="d-inline-block px-3 py-1 mb-3 rounded" style="background-color: var(--theme-color1); color: white;">GALLERY</span>
+      <h2 class="mb-3">Our Banquet Hall</h2>
+    </div>
+    
+    <div class="row g-3">
+      <div class="col-md-4" data-aos="fade-up">
+        <img src="images/banner/banquet1.jpg" alt="Banquet hall setup for wedding" class="img-fluid rounded shadow-sm">
       </div>
-      <div class="col-lg-6" data-aos="fade-left">
-        <div class="position-relative">
-          <img src="images\banner\Adobe Express - file (10).jpg" 
-               alt="Spacious banquet hall with elegant decor at Hotel Ranbirs" 
-               class="img-fluid rounded shadow-lg">
-          <div class="position-absolute bottom-0 end-0 p-3 rounded-start" style="background-color: var(--theme-color1); color: white;">
-            <h5 class="mb-0">Up to 300 Guests</h5>
-            <p class="mb-0 small">Flexible seating options</p>
-          </div>
-        </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <img src="images/banner/banquetredfull.jpg" alt="Corporate event setup" class="img-fluid rounded shadow-sm">
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <img src="images/banner/banquet1.jpg" alt="Banquet dining area" class="img-fluid rounded shadow-sm">
       </div>
     </div>
   </div>
 </section>
 
 <!-- Testimonials Section -->
-<section class="pt-80 pb-80" style="background-color: var(--theme-color3);">
+<section class="py-5 bg-light">
   <div class="auto-container">
-    <div class="sec-title text-center mb-5" data-aos="fade-up">
-      <span class="sub-title" style="color: var(--theme-color1);">CLIENT REVIEWS</span>
-      <h2 style="font-family: var(--title-font);">What Our Clients Say About Us</h2>
-      <p class="text-muted">Hear from couples and organizations who celebrated with us</p>
+    <div class="text-center mb-5">
+      <span class="d-inline-block px-3 py-1 mb-3 rounded" style="background-color: var(--theme-color1); color: white;">TESTIMONIALS</span>
+      <h2 class="mb-3">What Our Clients Say</h2>
     </div>
     
-    <div class="row g-4 justify-content-center">
-      <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-delay="100">
-        <div class="hover-card p-4 rounded shadow-sm h-100 bg-white">
-          <div class="rating mb-3" style="color: var(--theme-color1);">
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="fade-up">
+        <div class="p-4 bg-white rounded shadow-sm h-100">
+          <div class="mb-3" style="color: var(--theme-color1);">
             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
           </div>
-          <p class="mb-4"><i class="fas fa-quote-left me-2" style="color: var(--theme-color1);"></i>The Ranbirs team made our wedding day absolutely perfect. Their attention to detail and professional service exceeded our expectations.</p>
+          <p class="mb-4">"The Ranbirs team made our wedding day absolutely perfect. Their attention to detail was exceptional."</p>
           <div class="d-flex align-items-center">
-            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Priyanka wedding client testimonial" class="rounded-circle me-3" width="50">
+            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Client" class="rounded-circle me-3" width="50">
             <div>
               <h6 class="mb-0">Priyanka & Raj</h6>
               <small class="text-muted">Wedding Couple</small>
@@ -336,14 +389,14 @@
         </div>
       </div>
       
-      <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-delay="200">
-        <div class="hover-card p-4 rounded shadow-sm h-100 bg-white">
-          <div class="rating mb-3" style="color: var(--theme-color1);">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="p-4 bg-white rounded shadow-sm h-100">
+          <div class="mb-3" style="color: var(--theme-color1);">
             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
           </div>
-          <p class="mb-4"><i class="fas fa-quote-left me-2" style="color: var(--theme-color1);"></i>Our corporate gala was executed flawlessly. The banquet space was transformed exactly as we envisioned.</p>
+          <p class="mb-4">"Our corporate gala was executed flawlessly. The banquet space was transformed exactly as we envisioned."</p>
           <div class="d-flex align-items-center">
-            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Amit corporate client testimonial" class="rounded-circle me-3" width="50">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client" class="rounded-circle me-3" width="50">
             <div>
               <h6 class="mb-0">Amit Sharma</h6>
               <small class="text-muted">Corporate Client</small>
@@ -352,14 +405,14 @@
         </div>
       </div>
       
-      <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-delay="300">
-        <div class="hover-card p-4 rounded shadow-sm h-100 bg-white">
-          <div class="rating mb-3" style="color: var(--theme-color1);">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="p-4 bg-white rounded shadow-sm h-100">
+          <div class="mb-3" style="color: var(--theme-color1);">
             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
           </div>
-          <p class="mb-4"><i class="fas fa-quote-left me-2" style="color: var(--theme-color1);"></i>From the initial planning to the final execution, every detail was handled professionally. The food was exceptional!</p>
+          <p class="mb-4">"From planning to execution, every detail was handled professionally. The food was exceptional!"</p>
           <div class="d-flex align-items-center">
-            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Ananya birthday client testimonial" class="rounded-circle me-3" width="50">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client" class="rounded-circle me-3" width="50">
             <div>
               <h6 class="mb-0">Ananya Patel</h6>
               <small class="text-muted">Birthday Celebration</small>
@@ -373,46 +426,23 @@
 
 <!-- CTA Section with Parallax -->
 <section class="py-4 position-relative overflow-hidden" style="background: url('https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') no-repeat center center/cover;">
-  <div class="overlay" style="background: rgba(var(--theme-color-black-rgb), 0.7); position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
-  <div class="auto-container position-relative text-center" style="z-index: 1;" data-aos="zoom-in">
-    <h2 class="text-white mb-4" style="font-family: var(--title-font);">Book Your Event at Lucknow's Premier Banquet Hall</h2>
-    <p class="text-white mb-5">Contact our event specialists today to check availability and customize your perfect celebration package.</p>
-    <div class="d-flex justify-content-center gap-3">
-      <a href="contact.html" class="btn btn-lg pulse-anim" style="background-color: var(--theme-color1); color: white;">Schedule Visit</a>
-      <a href="tel:+919876543210" class="btn btn-lg btn-outline-light">Call: +91 9876543210</a>
+    <div class="overlay" style="background: rgba(var(--theme-color-black-rgb), 0.7); position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+    <div class="auto-container position-relative text-center" style="z-index: 1;" data-aos="zoom-in">
+        <h2 class="text-white mb-4" style="font-family: var(--title-font);">Ready to Plan Your Dream Event?</h2>
+        <p class="text-white mb-5">Contact our event specialists today to check availability and customize your perfect celebration package.</p>
+        <div class="d-flex justify-content-center gap-3">
+            <a href="contact.html" class="btn btn-lg pulse-anim" style="background-color: var(--theme-color1); color: white;">Enquire Online</a>
+            <a href="tel:+919876543210" class="btn btn-lg btn-outline-light">Call Now</a>
+        </div>
     </div>
-  </div>
-  
-  <!-- Floating Decorative Elements -->
-  <img src="https://cdn-icons-png.flaticon.com/512/3048/3048127.png" alt="Event decoration icon" class="position-absolute float-anim" style="width: 80px; top: 20%; left: 10%; animation-delay: 0s;">
-  <img src="https://cdn-icons-png.flaticon.com/512/3048/3048127.png" alt="Celebration icon" class="position-absolute float-anim" style="width: 60px; bottom: 30%; right: 15%; animation-delay: 1s;">
-</section>
 
 <!-- JavaScript Libraries -->
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script>
   // Initialize AOS animations
   AOS.init({
-    duration: 1000,
-    once: false,
-    easing: 'ease-in-out'
-  });
-  
-  // Initialize Owl Carousel
-  $(document).ready(function(){
-    $('.owl-carousel').owlCarousel({
-      loop: true,
-      margin: 20,
-      nav: false,
-      dots: false,
-      autoplay: true,
-      responsive: {
-        0: { items: 1 },
-        576: { items: 2 },
-        768: { items: 3 }
-      }
-    });
+    duration: 800,
+
   });
 </script>
 

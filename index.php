@@ -7,10 +7,17 @@
     --theme-color3: #faf7f2;       /* Off-white */
     --theme-color-light: #ffffff;  /* Pure white */
     --theme-color-dark: #121212;   /* Near black */
-    --text-color:rgb(196, 196, 196);        /* Medium gray */
+    --text-color: #555;            /* Medium gray */
     --headings-color: #121212;    /* Dark headings */
     --accent-color: #b34700;      /* Warning orange */
     --secondary-accent: #ff8800;  /* Bright orange */
+  }
+  
+  /* Base Styles */
+  body {
+    font-family: 'Poppins', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
   }
   
   /* Animation Classes */
@@ -40,37 +47,70 @@
     to { box-shadow: 0 0 20px rgba(var(--theme-color1-rgb), 0.8); }
   }
   
-  /* Custom Styles */
-  .page-title {
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    z-index: 1;
-  }
-  .page-title::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--gradient-1);
-    z-index: -1;
+  /* Typography */
+  h1, h2, h3, h4 {
+    font-family: 'Poppins', Arial, sans-serif !important;
+    font-weight: 600 !important;
+    color: var(--theme-color1) !important;
+    letter-spacing: -0.5px;
+    margin-bottom: 1.2rem;
+    line-height: 1.3;
   }
   
+  h1 {
+    font-size: 2.5rem !important;
+  }
+  
+  h2 {
+    font-size: 1.7rem !important;
+  }
+  
+  h3 {
+    font-size: 1.5rem !important;
+  }
+  
+  .text {
+    font-size: 1rem ;
+  }
+  
+  /* Buttons */
+  .btn-style-two {
+    background: var(--theme-color1);
+    color: white !important;
+    border: 2px solid var(--theme-color1);
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    /* padding: 12px 25px; */
+    font-weight: 500;
+    display: inline-block;
+  }
+  
+  .btn-style-two:hover {
+    background: transparent;
+    color: var(--theme-color1) !important;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(var(--theme-color1-rgb), 0.3);
+  }
+  
+  /* Cards */
   .dish-card {
     transition: all 0.3s ease;
     border: 1px solid rgba(var(--theme-color1-rgb), 0.1);
+    border-radius: 8px;
+    overflow: hidden;
   }
+  
   .dish-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px) scale(1.02);
     box-shadow: 0 15px 30px rgba(0,0,0,0.1);
   }
   
+  /* Menu Highlights */
   .menu-highlight {
     position: relative;
     overflow: hidden;
   }
+  
   .menu-highlight::after {
     content: '';
     position: absolute;
@@ -82,30 +122,119 @@
     transform: scaleX(0);
     transition: transform 0.3s ease;
   }
+  
   .menu-highlight:hover::after {
     transform: scaleX(1);
   }
-  h1, h2, h3 {
-    font-size: 2.5rem;
-    font-family: Arial, Helvetica, sans-serif !important;
-    font-weight: 600;
+  
+  /* Form Styles */
+  .contact-form input, 
+  .contact-form select, 
+  .contact-form textarea {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 12px 15px;
+    transition: all 0.3s;
+    width: 100%;
+    margin-bottom: 15px;
   }
   
-  /* For very small devices (up to 480px) */
+  .contact-form input:focus, 
+  .contact-form select:focus, 
+  .contact-form textarea:focus {
+    border-color: var(--theme-color1);
+    box-shadow: 0 0 0 3px rgba(var(--theme-color1-rgb), 0.2);
+    outline: none;
+  }
+  
+  /* Testimonials */
+  .testimonial-block-two {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  }
+  
+  .rating {
+    color: var(--secondary-accent);
+  }
+  
+  /* Responsive Styles */
   @media (max-width: 991px) {
-    h1, h2, h3 {
-      font-size: 2rem;
-      font-family: Arial, Helvetica, sans-serif !important;
-    }
     .btn-lg {
       font-size: 0.85rem;
       padding: 0.6rem 1.2rem;
     }
-    .feature-card .icon-box {
-      font-size: 1.2rem;
+    
+    h1 {
+      font-size: 1.8rem !important;
+    }
+    
+    h2 {
+      font-size: 1.5rem !important;
+    }
+    
+    h3 {
+      font-size: 1.3rem !important;
+    }
+    
+    .btn-style-two {
+      font-size: 13px !important;
+      padding: 8px 15px;
+    }
+    
+    .bigbanner {
+      display: none;
+    }
+    
+    .pricing-amount {
+      font-size: 1.5rem !important;
     }
   }
+  
+  @media (max-width: 767px) {
+    .content-column, .image-column {
+      padding: 0 15px;
+    }
+    
+    .pricing-block .row {
+      flex-direction: column-reverse;
+    }
+    
+    .contact-section .row {
+      flex-direction: column;
+    }
+    
+    .form-column {
+      margin-top: 30px;
+    }
+    
+    h1 {
+      font-size: 1.5rem !important;
+    }
+  }
+  .about-section-eight .content-column .inner-column {
+    padding-right: 0px;
+    padding-top: 0px;
+  }
+  .about-section-eight {
+    position: relative;
+    padding: 70px 0;
+}
+.video-section-four {
+    position: relative;
+    padding: 50px 0 50px;
+}
+@media (max-width: 575.98px) {
+    .sec-title h2 {
+        text-align: center;
+    }
+    .text-white {
+    text-align: center;
+}
+}
 </style>
+
 
 <!-- Schema Markup for Hotel -->
 <script type="application/ld+json">
@@ -185,7 +314,7 @@
         <div class="inner-box">
           <div class="content">
             <div class="count">02 <span>/ 05</span></div>
-            <h2 class="title">Multi-Cuisine Restaurant</h2>
+            <h2 class="title text-center">Multi-Cuisine Restaurant</h2>
           </div>
           <div class="overlay-content">
             <div class="count">02 <span>/ 05</span></div>
@@ -251,14 +380,14 @@
       <!-- Content Column -->
       <div class="content-column col-lg-5 col-xl-4">
         <div class="inner-column">
-          <div class="sec-title">
-            <span class="sub-title style-three">HOTEL RANBIRS LUXURY HOTEL</span>
-            <h1>Welcome to Hotel Ranbirs Gomti Nagar</h1>
-            <div class="text">Experience the perfect blend of luxury, comfort and convenience at Hotel Ranbirs, one of the best hotels in Lucknow for business travelers, families and couples. Strategically located in upscale Gomti Nagar, we offer elegant rooms, rooftop bar, fine dining restaurant, banquet halls and warm hospitality that feels like home - only better.</div>
+          <div class="sec-title text-center">
+            <span class="sub-title">HOTEL RANBIRS LUXURY HOTEL</span>
+            <h1 class="text-center">Welcome to Hotel Ranbirs Gomti Nagar</h1>
+            <div class="text text-center" style="text-align:justify;">Experience the perfect blend of luxury, comfort and convenience at Hotel Ranbirs, one of the best hotels in Lucknow for business travelers, families and couples. Strategically located in upscale Gomti Nagar, we offer elegant rooms, rooftop bar, fine dining restaurant, banquet halls and warm hospitality that feels like home - only better.</div>
           </div>
-          <div class="btn-box">
-            <a href="#packages" class="theme-btn btn-style-two" title="View Room Packages"><span class="btn-title">View Packages</span></a>
-            <a href="#contact" class="theme-btn btn-style-three ms-3" title="Book Your Stay"><span class="btn-title">Book Now</span></a>
+          <div class="btn-box d-flex justify-content-center align-items-center" style="display:flex !important; align-items:center !important; justify-content: center !important;">
+            <a href="packages.php" class="btn-style-two" title="View Room Packages"><span class="btn-title">View Packages</span></a>
+            <a href="#contact" class="btn-style-two ms-3" title="Book Your Stay"><span class="btn-title">Book Now</span></a>
           </div>
         </div>
       </div>
@@ -266,18 +395,18 @@
       <div class="image-column col-lg-7 col-xl-8">
         <div class="inner-column">
           <figure class="image-1 overlay-anim wow reveal-right tm-gsap-img-parallax overflow-hidden">
-            <img src="images\banner\about1-540-740.jpg" alt="Luxury Lobby at Hotel Ranbirs Gomti Nagar" title="Hotel Ranbirs Lobby">
+            <img src="images\banner\about1-540-740.jpg" alt="Luxury Lobby at Hotel Ranbirs Gomti Nagar" title="Hotel Ranbirs Lobby" class="img-fluid">
           </figure>
           <figure class="image-2 wow reveal-right tm-gsap-img-parallax overflow-hidden">
-            <img src="images\banner\about-1-1-280-280.jpg" alt="Deluxe Room at Hotel Ranbirs" title="Deluxe Room">
-            <img src="images\banner\about1-2-280-280.jpg" alt="Posadian Restaurant Interior" title="Restaurant View">
+            <img src="images\banner\about-1-1-280-280.jpg" alt="Deluxe Room at Hotel Ranbirs" title="Deluxe Room" class="img-fluid">
+            <img src="images\banner\about1-2-280-280.jpg" alt="Posadian Restaurant Interior" title="Restaurant View" class="img-fluid">
           </figure>
         </div>
       </div>
     </div>
   </div>
-  <div class="bg-image wow reveal-top tm-gsap-img-parallax overflow-hidden">
-    <img src="images\banner\banner.jpg" alt="Hotel Ranbirs Exterior View" title="Hotel Building">
+  <div class="bg-image bigbanner wow reveal-top tm-gsap-img-parallax overflow-hidden">
+    <img src="images\banner\roombanner.jpg" class="bigroom-banner img-fluid" alt="Hotel Ranbirs Exterior View" title="Hotel Building">
   </div>
 </section>
 <!--End About Section -->
@@ -372,10 +501,10 @@
               <div class="text wow fadeInLeft" data-wow-delay="300ms">HOTEL RANBIRS</div>
               <div class="image-box">
                 <figure class="image-1 overlay-anim wow reveal-left tm-gsap-img-parallax overflow-hidden">
-                  <img src="images/rooms/delux.jpeg" alt="Deluxe Room Interior at Hotel Ranbirs" title="Deluxe Room">
+                  <img src="images/rooms/delux.jpeg" alt="Deluxe Room Interior at Hotel Ranbirs" title="Deluxe Room" class="img-fluid">
                 </figure>
                 <figure class="image-2 overlay-anim wow reveal-left">
-                  <img src="images/rooms/delux1.jpeg" alt="Deluxe Room Bathroom Facilities" title="Bathroom">
+                  <img src="images/rooms/delux1.jpeg" alt="Deluxe Room Bathroom Facilities" title="Bathroom" class="img-fluid">
                 </figure>
               </div>
             </div>
@@ -399,8 +528,8 @@
               </div>
               <div class="text">Our Deluxe accommodation offers 18 business class rooms with a choice of twin or king beds, ideally suited for business travelers and couples. Features include a work desk, wardrobe, and modern bathroom with shower.</div>
               <div class="btn-box">
-                <a href="#contact" class="btn-style-four" title="Book Deluxe Room">Book Now</a>
-                <a href="room-details.html" class="btn-style-five ms-3" title="View Deluxe Room Details">View Details</a>
+                <a href="#contact" class="btn-style-two" title="Book Deluxe Room">Book Now</a>
+                <a href="page-rooms.php" class="btn-style-two ms-3" title="View Deluxe Room Details">View Details</a>
               </div>
             </div>
           </div>
@@ -417,10 +546,10 @@
               <div class="text wow fadeInLeft" data-wow-delay="300ms">HOTEL RANBIRS</div>
               <div class="image-box">
                 <figure class="image-1 overlay-anim wow reveal-right tm-gsap-img-parallax overflow-hidden">
-                  <img src="images/rooms/executive.jpeg" alt="Executive Room at Hotel Ranbirs" title="Executive Room">
+                  <img src="images/rooms/executive.jpeg" alt="Executive Room at Hotel Ranbirs" title="Executive Room" class="img-fluid">
                 </figure>
                 <figure class="image-2 overlay-anim wow reveal-right">
-                  <img src="images/rooms/delux1.jpeg" alt="Executive Room Seating Area" title="Sitting Area">
+                  <img src="images/rooms/delux1.jpeg" alt="Executive Room Seating Area" title="Sitting Area" class="img-fluid">
                 </figure>
               </div>
             </div>
@@ -444,8 +573,8 @@
               </div>
               <div class="text">The Executive room has been designed to provide more than just luxury. Beautiful woodwork creates a cozy atmosphere to relax and enjoy leisure time. Perfect for business executives and discerning travelers who appreciate extra space and amenities.</div>
               <div class="btn-box">
-                <a href="#contact" class="btn-style-four" title="Book Executive Room">Book Now</a>
-                <a href="room-details.html" class="btn-style-five ms-3" title="View Executive Room Details">View Details</a>
+                <a href="#contact" class="btn-style-four btn-style-two" title="Book Executive Room">Book Now</a>
+                <a href="page-rooms.php" class="btn-style-two ms-3" title="View Executive Room Details">View Details</a>
               </div>
             </div>
           </div>
@@ -462,10 +591,10 @@
               <div class="text wow fadeInLeft" data-wow-delay="300ms">HOTEL RANBIRS</div>
               <div class="image-box">
                 <figure class="image-1 overlay-anim wow reveal-left tm-gsap-img-parallax overflow-hidden">
-                  <img src="images/rooms/suite.jpeg" alt="Suite Room at Hotel Ranbirs" title="Luxury Suite">
+                  <img src="images/rooms/suite.jpeg" alt="Suite Room at Hotel Ranbirs" title="Luxury Suite" class="img-fluid">
                 </figure>
                 <figure class="image-2 overlay-anim wow reveal-left">
-                  <img src="images/rooms/delux1.jpeg" alt="Suite Room Living Area" title="Living Space">
+                  <img src="images/rooms/delux1.jpeg" alt="Suite Room Living Area" title="Living Space" class="img-fluid">
                 </figure>
               </div>
             </div>
@@ -488,8 +617,8 @@
               </div>
               <div class="text">Our elegantly styled Suite rooms are embellished with multiple features designed to inspire. Enjoy the separate living area, premium amenities and extra space perfect for families or guests seeking superior comfort. Includes exclusive check-in and personalized services.</div>
               <div class="btn-box">
-                <a href="#contact" class="btn-style-four" title="Book Suite Room">Book Now</a>
-                <a href="room-details.html" class="btn-style-five ms-3" title="View Suite Room Details">View Details</a>
+                <a href="#contact" class="btn-style-two" title="Book Suite Room">Book Now</a>
+                <a href="page-rooms.php" class="btn-style-two ms-3" title="View Suite Room Details">View Details</a>
               </div>
             </div>
           </div>
@@ -527,20 +656,20 @@
 <!-- End Restaurant section -->
 
 <!-- Banquet Section -->
-<section id="banquet" class="about-section-eight pb-0" aria-label="Banquet Facilities">
+<section id="banquet" class="about-section-eight pb-0 text-center" aria-label="Banquet Facilities">
   <div class="outer-box">
     <div class="row">
       <!-- Content Column -->
       <div class="content-column col-lg-5 col-xl-4">
         <div class="inner-column">
-          <div class="sec-title">
-            <span class="sub-title style-three">EVENTS & CELEBRATIONS</span>
-            <h2>Banquets & Meetings</h2>
-            <div class="text">Our elegantly designed banquet spaces are perfect for hosting weddings (capacity 250+), corporate events, and social gatherings. With customizable layouts, professional event planning services, and in-house catering, we ensure your special occasion is memorable. Features include stage lighting, audio-visual equipment, and dedicated event managers.</div>
+          <div class="sec-title sec-title text-center">
+            <span class="sub-title">EVENTS & CELEBRATIONS</span>
+            <h2 class="text-center">Banquets & Meetings</h2>
+            <div class="text text-center">Our elegantly designed banquet spaces are perfect for hosting weddings (capacity 250+), corporate events, and social gatherings. With customizable layouts, professional event planning services, and in-house catering, we ensure your special occasion is memorable. Features include stage lighting, audio-visual equipment, and dedicated event managers.</div>
           </div>
           <div class="btn-box">
-            <a href="#contact" class="theme-btn btn-style-two" title="Enquire About Banquets"><span class="btn-title">Enquire Now</span></a>
-            <a href="banquets.html" class="theme-btn btn-style-three ms-3" title="View Banquet Halls"><span class="btn-title">View Halls</span></a>
+            <a href="#contact" class="btn-style-two" title="Enquire About Banquets"><span class="btn-title">Enquire Now</span></a>
+            <a href="banquet.php" class=" btn-style-two ms-3" title="View Banquet Halls"><span class="btn-title">View Halls</span></a>
           </div>
         </div>
       </div>
@@ -548,11 +677,11 @@
       <div class="image-column col-lg-7 col-xl-8">
         <div class="inner-column">
           <figure class="image-1 overlay-anim wow reveal-right tm-gsap-img-parallax overflow-hidden">
-            <img src="images/resource/about8-1.jpg" alt="Banquet Hall Setup at Hotel Ranbirs" title="Banquet Hall">
+            <img src="images/resource/about8-1.jpg" alt="Banquet Hall Setup at Hotel Ranbirs" title="Banquet Hall" class="img-fluid">
           </figure>
           <figure class="image-2 wow reveal-right tm-gsap-img-parallax overflow-hidden">
-            <img src="images/resource/about8-2.jpg" alt="Wedding Reception at Hotel Ranbirs" title="Wedding Event">
-            <img src="images/resource/about8-3.jpg" alt="Corporate Meeting Setup" title="Corporate Event">
+            <img src="images/resource/about8-2.jpg" alt="Wedding Reception at Hotel Ranbirs" title="Wedding Event" class="img-fluid">
+            <img src="images/resource/about8-3.jpg" alt="Corporate Meeting Setup" title="Corporate Event" class="img-fluid">
           </figure>
         </div>
       </div>
@@ -710,9 +839,9 @@
           <!-- Contact Form -->
           <div class="contact-form wow fadeInLeft">
             <div class="icon-anchor-1 bounce-y"></div>
-            <div class="sec-title">
-              <span class="sub-title style-three">BOOK YOUR STAY</span>
-              <h2>Reservation Request</h2>
+            <div class="sec-title text-center">
+              <span class="sub-title">BOOK YOUR STAY</span>
+              <h2 class="text-center">Reservation Request</h2>
               <div class="text">Get the best rates by booking directly with us</div>
             </div>
 

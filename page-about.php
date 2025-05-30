@@ -90,17 +90,27 @@ include("layouts/header.php");
     .menu-highlight:hover::after {
       transform: scaleX(1);
     }
-    h1, h2, h3 {
-      font-size: 2.5rem;
+    h1 {
+      font-size: 2.5rem !important;
       font-family: Arial, Helvetica, sans-serif !important;
       font-weight: 600;
+      color: #AE7D54 !important;
     }
+    h2 {
+   font-size: 1.7rem !important;
+   line-height: 30px !important;
+   font-family: Arial, Helvetica, sans-serif !important;
+   font-weight: 600 !important ;
+   color: #AE7D54 !important;
+    }
+    h3 {
+font-size: 1.5rem !important;
+font-family: Arial, Helvetica, sans-serif !important;
+font-weight: 600 !important;
+color: #AE7D54;
+ }
     /* For very small devices (up to 480px) */
     @media (max-width: 991px) {
-      h1, h2, h3 {
-        font-size: 2rem;
-        font-family: Arial, Helvetica, sans-serif !important;
-      }
       .btn-lg {
         font-size: 0.85rem;
         padding: 0.6rem 1.2rem;
@@ -108,6 +118,11 @@ include("layouts/header.php");
       .feature-card .icon-box {
         font-size: 1.2rem;
       }
+       h1 {
+   font-size: 2rem !important;
+   font-family: Arial, Helvetica, sans-serif !important;
+   font-weight: 600;
+ }
     }
 </style>
 
@@ -284,7 +299,7 @@ include("layouts/header.php");
                 <div class="inner-column">
                     <div class="image-box">
                         <figure class="image overlay-anim wow reveal-left">
-                            <img src="images/banner/banquet.jpg" alt="Elegant banquet hall at Hotel Ranbirs">
+                            <img src="images/banner/banquet1.jpg" alt="Elegant banquet hall at Hotel Ranbirs">
                         </figure>
                     </div>
                 </div>

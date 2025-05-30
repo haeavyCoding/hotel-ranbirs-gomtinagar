@@ -105,6 +105,40 @@
     font-size: 1.2rem;
   }
 }
+ h1 {
+      font-size: 2.5rem !important;
+      font-family: Arial, Helvetica, sans-serif !important;
+      font-weight: 600;
+      color: #AE7D54 !important;
+    }
+    h2 {
+   font-size: 1.7rem !important;
+   line-height: 30px !important;
+   font-family: Arial, Helvetica, sans-serif !important;
+   font-weight: 600 !important;
+   color: #AE7D54 !important;
+    }
+    h3 {
+font-size: 1.5rem !important;
+font-family: Arial, Helvetica, sans-serif !important;
+font-weight: 600 !important;
+color: #AE7D54;
+ }
+    /* For very small devices (up to 480px) */
+    @media (max-width: 991px) {
+      .btn-lg {
+        font-size: 0.85rem;
+        padding: 0.6rem 1.2rem;
+      }
+      .feature-card .icon-box {
+        font-size: 1.2rem;
+      }
+       h1 {
+   font-size: 2rem !important;
+   font-family: Arial, Helvetica, sans-serif !important;
+   font-weight: 600;
+ }
+    }
 </style>
 <!-- Start main-content -->
 <section class="page-title" style="background-image: url(images/background/page-title-bg.png);">

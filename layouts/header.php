@@ -13,7 +13,7 @@
 <link rel="stylesheet" type="text/css" href="css/slick.css">
 
 <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-<link rel="icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.jpg" type="image/x-icon">
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -39,7 +39,7 @@
           <ul class="social-icon-one">
             <li><a href="https://www.facebook.com/HotelRanbir"><i class="fab fa-facebook-f"></i></a></li>
             <li><a href="https://www.instagram.com/ranbirshotel/?hl=en"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="https://in.linkedin.com/in/ranbirs-hotel-gomitinagar-a2343a359"><i class="fa-brands fa-linkedin-in"></i></a></li>
             <li><a href="https://x.com/i/flow/login?redirect_after_login=%2Fhotelranbirs"><i class="fab fa-x-twitter"></i></a></li>
           </ul>
         </div>
@@ -49,7 +49,7 @@
       <!-- Main box -->
       <div class="main-box">
         <div class="logo-box">
-          <div class="logo"><a href="index.html"><img src="images/logo (3).jpg" alt="Hotel Ranbirs" title="Hotel Ranbirs"></a></div>
+          <div class="logo"><a href="index.php"><img src="images\logo-transparent-removebg-preview.png" alt="Hotel Ranbirs" title="Hotel Ranbirs"></a></div>
         </div>
 
         <!--Nav Box-->
@@ -81,7 +81,7 @@
         <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
         <nav class="menu-box">
           <div class="upper-box">
-            <div class="nav-logo"><a href="index.html"><img src="images/logo (3).jpg" alt="Hotel Ranbirs"></a></div>
+            <div class="nav-logo"><a href="index.html"><img src="images\logo-transparent-removebg-preview.png" alt="Hotel Ranbirs"></a></div>
             <div class="close-btn"><i class="icon fa fa-times"></i></div>
           </div>
           <ul class="navigation onepage-nav clearfix">

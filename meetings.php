@@ -294,31 +294,46 @@
   .menu-highlight:hover::after {
     transform: scaleX(1);
   }
-  h1, h2, h3 {
-    font-size: 2.5rem;
-    font-family: Arial, Helvetica, sans-serif !important;
-    font-weight: 600;
-  }
-/* For very small devices (up to 480px) */
-@media (max-width: 991px) {
-  h1, h2, h3 {
-    font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif !important;
-  }
-  .btn-lg {
-    font-size: 0.85rem;
-    padding: 0.6rem 1.2rem;
-  }
-  .feature-card .icon-box {
-    font-size: 1.2rem;
-  }
-}
+  h1 {
+      font-size: 2.5rem !important;
+      font-family: Arial, Helvetica, sans-serif !important;
+      font-weight: 600;
+      color: #AE7D54 !important;
+    }
+    h2 {
+   font-size: 1.7rem !important;
+   line-height: 30px !important;
+   font-family: Arial, Helvetica, sans-serif !important;
+   font-weight: 600 !important;
+   color: #AE7D54 !important;
+    }
+    h3 {
+font-size: 1.5rem !important;
+font-family: Arial, Helvetica, sans-serif !important;
+font-weight: 600 !important;
+color: #AE7D54;
+ }
+    /* For very small devices (up to 480px) */
+    @media (max-width: 991px) {
+      .btn-lg {
+        font-size: 0.85rem;
+        padding: 0.6rem 1.2rem;
+      }
+      .feature-card .icon-box {
+        font-size: 1.2rem;
+      }
+       h1 {
+   font-size: 2rem !important;
+   font-family: Arial, Helvetica, sans-serif !important;
+   font-weight: 600;
+ }
+    }
 </style>
 
 <!-- Page Title Section -->
 <section class="page-title">
   <div class="auto-container text-center" data-aos="fade-down" data-aos-delay="100">
-    <h1 class="title" style="color: var(--theme-color1);">Meetings & Events</h1>
+    <h1 class="title" style="color: var(--theme-color1) ;">Meetings & Events</h1>
     <ul class="page-breadcrumb">
       <li><a href="index.html">Home</a></li>
       <li>Meetings & Events</li>
@@ -570,8 +585,8 @@
   </div>
   
   <!-- Floating Decorative Elements -->
-  <img src="https://cdn-icons-png.flaticon.com/512/3048/3048127.png" class="position-absolute float-anim" style="width: 80px; top: 20%; left: 10%; animation-delay: 0s;">
-  <img src="https://cdn-icons-png.flaticon.com/512/3048/3048127.png" class="position-absolute float-anim" style="width: 60px; bottom: 30%; right: 15%; animation-delay: 1s;">
+  <img src="https://cdn-icons-png.flaticon.com/512/3048/3048127.png" class="position-absolute float-anim" style="width: 2rem; top: 20%; left: 10%; animation-delay: 0s;">
+  <img src="https://cdn-icons-png.flaticon.com/512/3048/3048127.png" class="position-absolute float-anim" style="width: 2rem; bottom: 30%; right: 15%; animation-delay: 1s;">
 </section>
 
 

@@ -158,6 +158,40 @@
     font-size: 1.2rem;
   }
 }
+ h1 {
+      font-size: 2.5rem !important;
+      font-family: Arial, Helvetica, sans-serif !important;
+      font-weight: 600;
+      color: #AE7D54;
+    }
+    h2 {
+   font-size: 1.7rem !important;
+   line-height: 30px !important;
+   font-family: Arial, Helvetica, sans-serif !important;
+   font-weight: 600 !important;
+   color: #AE7D54;
+    }
+    h3 {
+font-size: 1.5rem !important;
+font-family: Arial, Helvetica, sans-serif !important;
+font-weight: 600 !important;
+color: #AE7D54;
+ }
+    /* For very small devices (up to 480px) */
+    @media (max-width: 991px) {
+      .btn-lg {
+        font-size: 0.85rem;
+        padding: 0.6rem 1.2rem;
+      }
+      .feature-card .icon-box {
+        font-size: 1.2rem;
+      }
+       h1 {
+   font-size: 2rem !important;
+   font-family: Arial, Helvetica, sans-serif !important;
+   font-weight: 600;
+ }
+    }
   </style>
 </head>
 <body>
@@ -224,9 +258,9 @@
             <figure class="image-2 overlay-anim"><img src="images\banner\room1fullsize.JPG" alt="Deluxe Room at Hotel Ranbirs Gomti Nagar"></figure>
           </div>
           <div class="content-box">
-            <h3 class="title" style="color: var(--theme-color1);"><a href="room-details.html">Deluxe Room</a></h3>
+            <h3 class="title" style="color: white !important"><a href="room-details.html">Deluxe Room</a></h3>
             <span class="price" style="color: var(--accent-color);">₹7,000 / NIGHT</span>
-            <p style="color: var(--text-color);">Elegantly styled and spacious, the Deluxe Room features modern furnishings, plush bedding, and all essential comforts for both business and leisure travelers.</p>
+            <p style="color: white !important;">Elegantly styled and spacious, the Deluxe Room features modern furnishings, plush bedding, and all essential comforts for both business and leisure travelers.</p>
             <div class="room-features mt-3">
               <ul style="color: var(--text-color);">
                 <li><i class="fa fa-bed" style="color: var(--accent-color);"></i> Queen-size Bed</li>
@@ -253,9 +287,9 @@
             <figure class="image-2 overlay-anim"><img src="images\banner\room1fullsize.JPG" alt="Executive Room at Hotel Ranbirs Lucknow"></figure>
           </div>
           <div class="content-box">
-            <h3 class="title" style="color: var(--theme-color1);"><a href="room-details.html">Executive Room</a></h3>
+            <h3 class="title" style="color: white !important;"><a href="room-details.html">Executive Room</a></h3>
             <span class="price" style="color: var(--accent-color);">₹8,000 / NIGHT</span>
-            <p style="color: var(--text-color);">Designed for luxury and convenience, the Executive Room features a workstation, complimentary high-speed internet, and enhanced in-room amenities.</p>
+            <p style="color: white !important;">Designed for luxury and convenience, the Executive Room features a workstation, complimentary high-speed internet, and enhanced in-room amenities.</p>
             <div class="room-features mt-3">
               <ul style="color: var(--text-color);">
                 <li><i class="fa fa-bed" style="color: var(--accent-color);"></i> King-size Bed</li>
@@ -282,9 +316,9 @@
             <figure class="image-2 overlay-anim"><img src="images\banner\room1fullsize.JPG" alt="Family Suite at Hotel Ranbirs Gomti Nagar"></figure>
           </div>
           <div class="content-box">
-            <h3 class="title" style="color: var(--theme-color1);"><a href="room-details.html">Family Suite</a></h3>
+            <h3 class="title" style="color: white !important;"><a href="room-details.html">Family Suite</a></h3>
             <span class="price" style="color: var(--accent-color);">₹12,000 / NIGHT</span>
-            <p style="color: var(--text-color);">The luxurious Suite offers a separate living area, king-size bed, premium bath essentials, and a beautiful city view to elevate your stay experience.</p>
+            <p style="color: white !important;">The luxurious Suite offers a separate living area, king-size bed, premium bath essentials, and a beautiful city view to elevate your stay experience.</p>
             <div class="room-features mt-3">
               <ul style="color: var(--text-color);">
                 <li><i class="fa fa-home" style="color: var(--accent-color);"></i> Two Interconnected Bedrooms</li>
@@ -311,9 +345,9 @@
             <figure class="image-2 overlay-anim"><img src="images\banner\room1fullsize.JPG" alt="Budget Room at Hotel Ranbirs Lucknow"></figure>
           </div>
           <div class="content-box">
-            <h3 class="title" style="color: var(--theme-color1);"><a href="room-details.html">Budget Room</a></h3>
+            <h3 class="title" style="color: white !important;"><a href="room-details.html">Budget Room</a></h3>
             <span class="price" style="color: var(--accent-color);">₹5,000 / NIGHT</span>
-            <p style="color: var(--text-color);">Affordable yet comfortable, the Budget Room is ideal for short stays. Enjoy a restful bed, clean en-suite, and modern essentials without compromise.</p>
+            <p style="color: white !important;">Affordable yet comfortable, the Budget Room is ideal for short stays. Enjoy a restful bed, clean en-suite, and modern essentials without compromise.</p>
             <div class="room-features mt-3">
               <ul style="color: var(--text-color);">
                 <li><i class="fa fa-bed" style="color: var(--accent-color);"></i> Comfortable Twin Beds</li>
@@ -429,8 +463,8 @@
   </div>
   
   <!-- Floating food decoration -->
-  <img src="https://cdn-icons-png.flaticon.com/512/5787/5787068.png" class="position-absolute float-anim" style="width: 80px; top: 20%; left: 10%; animation-delay: 0s;" alt="Hotel decoration">
-  <img src="https://cdn-icons-png.flaticon.com/512/3194/3194889.png" class="position-absolute float-anim" style="width: 60px; bottom: 30%; right: 15%; animation-delay: 1s;" alt="Hotel decoration">
+  <img src="https://cdn-icons-png.flaticon.com/512/5787/5787068.png" class="position-absolute float-anim" style="width: 2rem; top: 20%; left: 10%; animation-delay: 0s;" alt="Hotel decoration">
+  <img src="https://cdn-icons-png.flaticon.com/512/3194/3194889.png" class="position-absolute float-anim" style="width: 2rem; bottom: 30%; right: 15%; animation-delay: 1s;" alt="Hotel decoration">
 </section>
 
 <!-- AOS Script -->
